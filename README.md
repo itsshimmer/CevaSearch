@@ -7,5 +7,5 @@ Repositório do grupo composto pelos membros:
 - Alex Freitas Soares
 - Bruno Nepomuceno
 - João Brentano
-- Rodrigo Tarolco
+- Rodrigo Tarouco
 - Willian Albeche
