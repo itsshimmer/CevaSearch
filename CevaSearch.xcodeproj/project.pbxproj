@@ -11,6 +11,16 @@
 		B49625472641C0F800166B49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49625462641C0F800166B49 /* ContentView.swift */; };
 		B49625492641C0FA00166B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49625482641C0FA00166B49 /* Assets.xcassets */; };
 		B496254C2641C0FA00166B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B496254B2641C0FA00166B49 /* Preview Assets.xcassets */; };
+		B4AD2EDC26430F73009C263E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EDB26430F73009C263E /* DetailView.swift */; };
+		B4AD2EE026430FDB009C263E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EDF26430FDB009C263E /* MainView.swift */; };
+		B4AD2EE326430FE7009C263E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EE226430FE7009C263E /* OnboardingView.swift */; };
+		B4AD2EE62643100A009C263E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EE52643100A009C263E /* MapView.swift */; };
+		B4AD2EEA26431020009C263E /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EE926431020009C263E /* MapModel.swift */; };
+		B4AD2EED26431036009C263E /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EEC26431036009C263E /* DetailModel.swift */; };
+		B4AD2EF026431070009C263E /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EEF26431070009C263E /* OnboardingViewModel.swift */; };
+		B4AD2EF426431086009C263E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EF326431086009C263E /* MainViewModel.swift */; };
+		B4AD2EF726431091009C263E /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EF626431091009C263E /* DetailViewModel.swift */; };
+		B4AD2EFA2643109C009C263E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EF92643109C009C263E /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +30,16 @@
 		B49625482641C0FA00166B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B496254B2641C0FA00166B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B496254D2641C0FA00166B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4AD2EDB26430F73009C263E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B4AD2EDF26430FDB009C263E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B4AD2EE226430FE7009C263E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B4AD2EE52643100A009C263E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B4AD2EE926431020009C263E /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		B4AD2EEC26431036009C263E /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		B4AD2EEF26431070009C263E /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		B4AD2EF326431086009C263E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B4AD2EF626431091009C263E /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		B4AD2EF92643109C009C263E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +72,9 @@
 		B49625432641C0F800166B49 /* CevaSearch */ = {
 			isa = PBXGroup;
 			children = (
+				B4AD2EDA26430F35009C263E /* ViewModel */,
+				B4AD2ED926430F2B009C263E /* View */,
+				B4AD2ED826430F25009C263E /* Model */,
 				B49625442641C0F800166B49 /* CevaSearchApp.swift */,
 				B49625462641C0F800166B49 /* ContentView.swift */,
 				B49625482641C0FA00166B49 /* Assets.xcassets */,
@@ -67,6 +90,37 @@
 				B496254B2641C0FA00166B49 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4AD2ED826430F25009C263E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD2EE926431020009C263E /* MapModel.swift */,
+				B4AD2EEC26431036009C263E /* DetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4AD2ED926430F2B009C263E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD2EE226430FE7009C263E /* OnboardingView.swift */,
+				B4AD2EDF26430FDB009C263E /* MainView.swift */,
+				B4AD2EDB26430F73009C263E /* DetailView.swift */,
+				B4AD2EE52643100A009C263E /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4AD2EDA26430F35009C263E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD2EEF26431070009C263E /* OnboardingViewModel.swift */,
+				B4AD2EF326431086009C263E /* MainViewModel.swift */,
+				B4AD2EF626431091009C263E /* DetailViewModel.swift */,
+				B4AD2EF92643109C009C263E /* MapViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +192,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4AD2EED26431036009C263E /* DetailModel.swift in Sources */,
 				B49625472641C0F800166B49 /* ContentView.swift in Sources */,
+				B4AD2EE62643100A009C263E /* MapView.swift in Sources */,
+				B4AD2EF026431070009C263E /* OnboardingViewModel.swift in Sources */,
+				B4AD2EE026430FDB009C263E /* MainView.swift in Sources */,
+				B4AD2EF426431086009C263E /* MainViewModel.swift in Sources */,
+				B4AD2EDC26430F73009C263E /* DetailView.swift in Sources */,
+				B4AD2EEA26431020009C263E /* MapModel.swift in Sources */,
+				B4AD2EE326430FE7009C263E /* OnboardingView.swift in Sources */,
+				B4AD2EF726431091009C263E /* DetailViewModel.swift in Sources */,
 				B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */,
+				B4AD2EFA2643109C009C263E /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
