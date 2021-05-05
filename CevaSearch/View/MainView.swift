@@ -8,13 +8,39 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State private var searchText = ""
+    
+    
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack(alignment: .leading) {
+            TextField("Type your search",text: $searchText)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            VStack(alignment: .leading) {
+                Text("7 results founded")
+                    .font(.subheadline)
+                    .fontWeight(.semibold).multilineTextAlignment(.leading)
+                
+                BeerInfoCell()
+            }
+            
+            
+        }
+        .padding(.all, 10)
+        
     }
 }
+
+
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+        
     }
 }
+
+
