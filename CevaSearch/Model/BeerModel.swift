@@ -19,10 +19,10 @@ struct Beer: Hashable, Codable, Identifiable {
     var temperature: String
     var food: String
     var origin: String
-    var diponibility: String
+    var disponibility: String
     
-    private var imageName: String
-        var image: Image {
-            Image(imageName)
-    }
+//    private var imageName: String
+//        var image: Image {
+//            Image(imageName)
+//    }
 }

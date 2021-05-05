@@ -40,7 +40,7 @@
         "name": "Ampolis Aveludadis",
         "type": "New England IPA",
         "ibu": 35,
-        "colou": "Amarela",
+        "color": "Amarela",
         "abv": 6,
         "temperature": "4º a 12º",
         "food": "",
@@ -73,7 +73,7 @@
     },
     {
         "id": 1007,
-        "nome": "Dado Bier",
+        "name": "Dado Bier",
         "type": "Lager",
         "ibu": 9.5,
         "color": "Amarela",
@@ -81,7 +81,7 @@
         "temperature": "8º to 12º",
         "food": "Carnes vermelhas, queijos e hamburguer.",
         "origin": "Brasil 🇧🇷",
-        "availability": "Lata 350ml"
+        "disponibility": "Lata 350ml"
       
     }
 ]
