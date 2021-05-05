@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D2B269F2643307F00C2DC14 /* BeerInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B269E2643307F00C2DC14 /* BeerInfoCell.swift */; };
 		B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49625442641C0F800166B49 /* CevaSearchApp.swift */; };
 		B49625472641C0F800166B49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49625462641C0F800166B49 /* ContentView.swift */; };
 		B49625492641C0FA00166B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49625482641C0FA00166B49 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D2B269E2643307F00C2DC14 /* BeerInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerInfoCell.swift; sourceTree = "<group>"; };
 		B49625412641C0F800166B49 /* CevaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CevaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49625442641C0F800166B49 /* CevaSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CevaSearchApp.swift; sourceTree = "<group>"; };
 		B49625462641C0F800166B49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				B4AD2EDF26430FDB009C263E /* MainView.swift */,
 				B4AD2EDB26430F73009C263E /* DetailView.swift */,
 				B4AD2EE52643100A009C263E /* MapView.swift */,
+				9D2B269E2643307F00C2DC14 /* BeerInfoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				B4AD2EDC26430F73009C263E /* DetailView.swift in Sources */,
 				B4AD2EEA26431020009C263E /* MapModel.swift in Sources */,
 				B4AD2EE326430FE7009C263E /* OnboardingView.swift in Sources */,
+				9D2B269F2643307F00C2DC14 /* BeerInfoCell.swift in Sources */,
 				B4AD2EF726431091009C263E /* DetailViewModel.swift in Sources */,
 				B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */,
 				B4AD2EFA2643109C009C263E /* MapViewModel.swift in Sources */,
