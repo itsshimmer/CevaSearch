@@ -11,9 +11,6 @@ struct MainView: View {
     
     @State private var searchText = ""
     
-    
-    
-    
     var body: some View {
         
         VStack(alignment: .leading) {
@@ -24,7 +21,10 @@ struct MainView: View {
                     .font(.subheadline)
                     .fontWeight(.semibold).multilineTextAlignment(.leading)
                 
-                BeerInfoCell()
+                List(beers) { beer in
+                    BeerInfoCell(beer: beer)
+                    
+                }
             }
             
             

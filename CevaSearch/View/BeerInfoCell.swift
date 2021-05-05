@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct BeerInfoCell: View {
+    
+    var beer: Beer
+    
     var body: some View {
         VStack(alignment: .leading) {
             Image("friendship")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            Text("Beer Title")
+            Text(beer.name)
                 .font(.title)
-            Text("Beer type")
+            Text(beer.type)
                 .font(.subheadline)
         }
     }
@@ -24,6 +27,6 @@ struct BeerInfoCell: View {
 
 struct BeerInfoCell_Previews: PreviewProvider {
     static var previews: some View {
-        BeerInfoCell()
+        BeerInfoCell(beer: beers[0])
     }
 }
