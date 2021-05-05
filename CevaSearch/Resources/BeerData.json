@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1001,
+        "name": "Dharma Juicy IPA",
+        "type": "Indian Pale Ale",
+        "ibu": 45,
+        "color": "Amarelo Dourado",
+        "abv": 6.3,
+        "temperature": "4º a 12º",
+        "food": "Macarrão ao molho pesto, comidas típicas baianas, queijo gorgonzola.",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Lata 473 ml, Growler 1L"
+    },
+    {
+        "id": 1002,
+        "name": "Tripel Karmeliet",
+        "type": "Belgian Ale Trippel",
+        "ibu": 16,
+        "color": "Amarelo Dourado",
+        "abv": 8.4,
+        "temperature": "4º a 12º",
+        "food": "Massa molho Bechamel, Salame.",
+        "origin": "Bélgica 🇧🇪",
+        "disponibility": "Garrafa 750 ml"
+    },
+    {
+        "id": 1003,
+        "name": "Colorado Ithaca",
+        "type": "Imperial Stout",
+        "ibu": 52,
+        "color": "Marrom",
+        "abv": 10.5,
+        "temperature": "4º a 12º",
+        "food": "Vai bem com carnes de caça, queijos duros bem maturados, presunto cru e sobremesas caramelizadas, como crème brûlée e pudim de leite.",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Garrafa 600 ml"
+    },
+    {
+        "id": 1004,
+        "name": "Ampolis Aveludadis",
+        "type": "New England IPA",
+        "ibu": 35,
+        "colou": "Amarela",
+        "abv": 6,
+        "temperature": "4º a 12º",
+        "food": "",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Garrafa 355 ml"
+    },
+    {
+        "id": 1005,
+        "name": "Heineken",
+        "type": "Pale Lager",
+        "ibu": 23,
+        "color": "Dourada",
+        "abv": 5,
+        "temperature": "4º a 12º",
+        "food": "Alimentos como pastéis, aperitivos não gordurosos como queijo, azeitona e mandioca são boas pedidas",
+        "origin": "Holanda 🇳🇱",
+        "disponibility": "Lata 350ml e Garrafa 330 ml"
+    },
+    {
+        "id": 1006,
+        "name": "Coruja",
+        "type": "American Larger",
+        "ibu": 25,
+        "color": "Cobre/Ambar",
+        "abv": 6.5,
+        "temperature": "4º a 12º",
+        "food": "Carne de porco, Hambúrguer, filé grelhado simples, pratos tailandeses e indianos, amenizado a pimenta.",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Garrafa 500ml"
+    },
+    {
+        "id": 1007,
+        "nome": "Dado Bier",
+        "type": "Lager",
+        "ibu": 9.5,
+        "color": "Amarela",
+        "abv": 5,
+        "temperature": "8º to 12º",
+        "food": "Carnes vermelhas, queijos e hamburguer.",
+        "origin": "Brasil 🇧🇷",
+        "availability": "Lata 350ml"
+      
+    }
+]
