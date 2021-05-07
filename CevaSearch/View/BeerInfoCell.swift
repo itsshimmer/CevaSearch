@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+
 struct BeerInfoCell: View {
     
     var beer: Beer
     
     var body: some View {
+        
         VStack(alignment: .leading) {
             Image("friendship")
                 .resizable()

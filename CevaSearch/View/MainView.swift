@@ -13,26 +13,36 @@ struct MainView: View {
     
     var body: some View {
         
-        VStack(alignment: .leading) {
-            TextField("Type your search",text: $searchText)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+        NavigationView() {
             VStack(alignment: .leading) {
-                Text("7 results founded")
-                    .font(.subheadline)
-                    .fontWeight(.semibold).multilineTextAlignment(.leading)
-                
-                List(beers) { beer in
-                    BeerInfoCell(beer: beer)
+                TextField("Type your search",text: $searchText)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                VStack(alignment: .leading) {
+                    Text("7 results founded")
+                        .font(.subheadline)
+                        .fontWeight(.semibold).multilineTextAlignment(.leading)
                     
+                    List(beers) { beer in
+                        NavigationLink(
+                            destination: BeerView(beer: beer)
+                        ) {
+                         BeerInfoCell(beer: beer)
+                        }
+                        
+                        
+                    }
                 }
+                
+                
             }
-            
+            .padding(.all, 10)
             
         }
-        .padding(.all, 10)
-        
     }
+    
 }
+
+
 
 
 
