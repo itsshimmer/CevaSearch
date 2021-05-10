@@ -9,14 +9,11 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State private var searchText = ""
-    
     var body: some View {
         
         NavigationView() {
             VStack(alignment: .leading) {
-                TextField("Type your search",text: $searchText)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                SearchBarView()
                 VStack(alignment: .leading) {
                     Text("7 results founded")
                         .font(.subheadline)
