@@ -13,7 +13,7 @@ struct MainView: View {
         
         NavigationView() {
             VStack(alignment: .leading) {
-                SearchBarView()
+                SearchHeaderView()
                 VStack(alignment: .leading) {
                     Text("7 results founded")
                         .font(.subheadline)
