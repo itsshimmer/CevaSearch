@@ -10,6 +10,8 @@ import SwiftUI
 import CoreLocation
 
 struct Beer: Hashable, Codable, Identifiable {
+    
+    
     var id: Int
     var name: String
     var type: String
@@ -20,6 +22,8 @@ struct Beer: Hashable, Codable, Identifiable {
     var food: String
     var origin: String
     var disponibility: String
+//    var show:Bool = false
+//    var image:String = "ceva"
     
 //    private var imageName: String
 //        var image: Image {

@@ -28,8 +28,6 @@ struct MainView: View {
                         ) {
                          BeerInfoCell(beer: beer)
                         }
-                        
-                        
                     }
                 }
                 

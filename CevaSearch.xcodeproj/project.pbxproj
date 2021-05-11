@@ -23,6 +23,7 @@
 		B4AD2EF726431091009C263E /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EF626431091009C263E /* DetailViewModel.swift */; };
 		B4AD2EFA2643109C009C263E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EF92643109C009C263E /* MapViewModel.swift */; };
 		B4E7C6CC2643289B00905924 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E7C6CB2643289B00905924 /* BeerModel.swift */; };
+		CD9812872649C10C003C7EA8 /* ScrollViewHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9812862649C10C003C7EA8 /* ScrollViewHorizontal.swift */; };
 		FA07980226431EDD0060856B /* BeerData.json in Resources */ = {isa = PBXBuildFile; fileRef = FA07980126431EDD0060856B /* BeerData.json */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		B4AD2EF626431091009C263E /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		B4AD2EF92643109C009C263E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		B4E7C6CB2643289B00905924 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
+		CD9812862649C10C003C7EA8 /* ScrollViewHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewHorizontal.swift; sourceTree = "<group>"; };
 		FA07980126431EDD0060856B /* BeerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BeerData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				B4AD2EDB26430F73009C263E /* BeerView.swift */,
 				B4AD2EE52643100A009C263E /* MapView.swift */,
 				9D2B269E2643307F00C2DC14 /* BeerInfoCell.swift */,
+				CD9812862649C10C003C7EA8 /* ScrollViewHorizontal.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				9D2B269F2643307F00C2DC14 /* BeerInfoCell.swift in Sources */,
 				B4AD2EF726431091009C263E /* DetailViewModel.swift in Sources */,
 				B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */,
+				CD9812872649C10C003C7EA8 /* ScrollViewHorizontal.swift in Sources */,
 				B4AD2EFA2643109C009C263E /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
