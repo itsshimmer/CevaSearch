@@ -14,6 +14,9 @@ struct MainView: View {
         NavigationView() {
             VStack(alignment: .leading) {
                 SearchHeaderView()
+                HeaderUser(userName: "Brentano")
+                TextField("Type your search",text: $searchText)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 VStack(alignment: .leading) {
                     Text("7 results founded")
                         .font(.subheadline)
