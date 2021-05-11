@@ -9,7 +9,8 @@
         "temperature": "4º a 12º",
         "food": "Macarrão ao molho pesto, comidas típicas baianas, queijo gorgonzola.",
         "origin": "Brasil 🇧🇷",
-        "disponibility": "Lata 473 ml, Growler 1L"
+        "disponibility": "Lata 473 ml, Growler 1L",
+        "imageName": ""
     },
     {
         "id": 1002,
@@ -21,7 +22,8 @@
         "temperature": "4º a 12º",
         "food": "Massa molho Bechamel, Salame.",
         "origin": "Bélgica 🇧🇪",
-        "disponibility": "Garrafa 750 ml"
+        "disponibility": "Garrafa 750 ml",
+        "imageName": ""
     },
     {
         "id": 1003,
@@ -33,7 +35,8 @@
         "temperature": "4º a 12º",
         "food": "Vai bem com carnes de caça, queijos duros bem maturados, presunto cru e sobremesas caramelizadas, como crème brûlée e pudim de leite.",
         "origin": "Brasil 🇧🇷",
-        "disponibility": "Garrafa 600 ml"
+        "disponibility": "Garrafa 600 ml",
+        "imageName": ""
     },
     {
         "id": 1004,
@@ -45,7 +48,8 @@
         "temperature": "4º a 12º",
         "food": "",
         "origin": "Brasil 🇧🇷",
-        "disponibility": "Garrafa 355 ml"
+        "disponibility": "Garrafa 355 ml",
+        "imageName": ""
     },
     {
         "id": 1005,
@@ -57,7 +61,8 @@
         "temperature": "4º a 12º",
         "food": "Alimentos como pastéis, aperitivos não gordurosos como queijo, azeitona e mandioca são boas pedidas",
         "origin": "Holanda 🇳🇱",
-        "disponibility": "Lata 350ml e Garrafa 330 ml"
+        "disponibility": "Lata 350ml e Garrafa 330 ml",
+        "imageName": "heineken"
     },
     {
         "id": 1006,
@@ -69,7 +74,8 @@
         "temperature": "4º a 12º",
         "food": "Carne de porco, Hambúrguer, filé grelhado simples, pratos tailandeses e indianos, amenizado a pimenta.",
         "origin": "Brasil 🇧🇷",
-        "disponibility": "Garrafa 500ml"
+        "disponibility": "Garrafa 500ml",
+        "imageName": ""
     },
     {
         "id": 1007,
@@ -81,7 +87,8 @@
         "temperature": "8º to 12º",
         "food": "Carnes vermelhas, queijos e hamburguer.",
         "origin": "Brasil 🇧🇷",
-        "disponibility": "Lata 350ml"
+        "disponibility": "Lata 350ml",
+        "imageName": ""
       
     }
 ]

@@ -26,14 +26,11 @@ struct MainView: View {
                         NavigationLink(
                             destination: BeerView(beer: beer)
                         ) {
-                         BeerInfoCell(beer: beer)
+                            BeerInfoCell(beer: beer)
                         }
-                        
-                        
                     }
                 }
-                
-                
+                BeerSuggestionView(beerList: beers)
             }
             .padding(.all, 10)
             
@@ -42,15 +39,9 @@ struct MainView: View {
     
 }
 
-
-
-
-
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
         
     }
 }
-
-
