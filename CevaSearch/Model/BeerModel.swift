@@ -21,8 +21,8 @@ struct Beer: Hashable, Codable, Identifiable {
     var origin: String
     var disponibility: String
     
-//    private var imageName: String
-//        var image: Image {
-//            Image(imageName)
-//    }
+    private var imageName: String
+        var image: Image {
+            Image(imageName)
+    }
 }
