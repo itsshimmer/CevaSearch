@@ -27,6 +27,6 @@ struct BeerSuggestionCellView: View {
 
 struct BeerSuggestionCellView_Previews: PreviewProvider {
     static var previews: some View {
-        BeerSuggestionCellView(beer: beers[4])
+        BeerSuggestionCellView(beer: beers.randomElement()!)
     }
 }

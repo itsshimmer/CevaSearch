@@ -10,7 +10,7 @@
         "food": "Macarrão ao molho pesto, comidas típicas baianas, queijo gorgonzola.",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Lata 473 ml, Growler 1L",
-        "imageName": ""
+        "imageName": "dharmaJuicyIPA"
     },
     {
         "id": 1002,
@@ -23,7 +23,7 @@
         "food": "Massa molho Bechamel, Salame.",
         "origin": "Bélgica 🇧🇪",
         "disponibility": "Garrafa 750 ml",
-        "imageName": ""
+        "imageName": "tripelkarmeliet"
     },
     {
         "id": 1003,
@@ -36,7 +36,7 @@
         "food": "Vai bem com carnes de caça, queijos duros bem maturados, presunto cru e sobremesas caramelizadas, como crème brûlée e pudim de leite.",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Garrafa 600 ml",
-        "imageName": ""
+        "imageName": "ColoradoIthaca"
     },
     {
         "id": 1004,
@@ -75,7 +75,7 @@
         "food": "Carne de porco, Hambúrguer, filé grelhado simples, pratos tailandeses e indianos, amenizado a pimenta.",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Garrafa 500ml",
-        "imageName": ""
+        "imageName": "Coruja"
     },
     {
         "id": 1007,

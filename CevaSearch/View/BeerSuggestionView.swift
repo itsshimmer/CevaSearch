@@ -11,10 +11,11 @@ struct BeerSuggestionView: View {
     
     var beerList: [Beer]
     
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false){
             HStack {
-                ForEach(beerList) { beer in
+                ForEach(beerList.shuffled()) { beer in
                     BeerSuggestionCellView(beer: beer)
                 }
             }
