@@ -13,8 +13,8 @@ struct MainView: View {
         
         NavigationView() {
             VStack(alignment: .leading) {
-                SearchHeaderView()
                 HeaderUser(userName: "Brentano")
+                SearchHeaderView()
                 VStack(alignment: .leading) {
                     Text("7 results founded")
                         .font(.subheadline)
@@ -29,9 +29,12 @@ struct MainView: View {
                 }
                 BeerSuggestionView(beerList: beers)
             }
-            .padding(.all, 10)
+            //.padding(.all, 10)
             
         }
+        .navigationBarHidden(true)
+        .ignoresSafeArea()
+        Spacer()
     }
     
 }
