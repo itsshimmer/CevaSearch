@@ -16,6 +16,7 @@ struct DateDisplay {
         let yearString = formatter.string(from: date)
         return yearString
     }
+    
     func displayMonth() -> String {
         let date = Date()
         let formatter = DateFormatter()
