@@ -17,7 +17,6 @@ struct ContentView: View {
         } else {
             MainView()
         }
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
