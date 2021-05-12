@@ -27,7 +27,7 @@ struct BeerView: View {
             
             ScrollView(.vertical, showsIndicators: false , content: {
                 GeometryReader{reader in
-                    Image("chorona")
+                    Image("corona")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .offset(y: -reader.frame(in: .global).minY)
@@ -127,4 +127,5 @@ struct BeerView_Previews: PreviewProvider {
         BeerView(beer: beers[0])
     }
 }
+
 var teste: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet leo quis lorem faucibus feugiat vitae dignissim mi. Integer tincidunt a mi et pellentesque. In vel fringilla leo. Morbi eu iaculis mi. Proin sed leo tempor, laoreet metus nec, tristique dui. Duis placerat dolor at accumsan tempus. Ut porttitor mi hendrerit ex egestas, et finibus tortor commodo. Suspendisse efficitur ultricies enim eu consequat. Cras luctus mi sit amet diam porttitor vulputate. Etiam lacinia ipsum ut euismod auctor. Ut malesuada ut massa non imperdiet. Quisque commodo nisi in lacinia tincidunt. Donec lobortis imperdiet elit, id tincidunt quam faucibus nec. Ut mauris ante, laoreet quis magna id, porttitor bibendum metus."
