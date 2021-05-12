@@ -25,8 +25,8 @@ struct Beer: Hashable, Codable, Identifiable {
 //    var show:Bool = false
 //    var image:String = "ceva"
     
-//    private var imageName: String
-//        var image: Image {
-//            Image(imageName)
-//    }
+    private var imageName: String
+        var image: Image {
+            Image(imageName)
+    }
 }
