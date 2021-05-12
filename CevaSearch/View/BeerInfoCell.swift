@@ -20,7 +20,6 @@ func didPressLikeButton(_ button: UIButton) {
     }
 }
 
-
 struct BeerInfoCell: View {
     
     @State private var isLiked: Bool = false
@@ -64,10 +63,10 @@ struct StarButton: View{
             self.animate = true
             
             DispatchQueue.main.asyncAfter(deadline: .now() +
-                self.animationDuration,execute: {
-                  self.animate = false
-                  self.isLiked.toggle()
-                })
+                                            self.animationDuration,execute: {
+                                                self.animate = false
+                                                self.isLiked.toggle()
+                                            })
             
             
         },  label: {
@@ -81,9 +80,7 @@ struct StarButton: View{
         .scaleEffect(animate ? animationScale : 1)
         .animation(.easeIn(duration: animationDuration))
     }
-    
 }
-
 
 struct BeerInfoCell_Previews: PreviewProvider {
     static var previews: some View {

@@ -33,5 +33,3 @@ struct DateDisplay {
         return dayString
     }
 }
-
-

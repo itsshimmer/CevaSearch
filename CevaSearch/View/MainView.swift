@@ -29,14 +29,9 @@ struct MainView: View {
                 }
                 BeerSuggestionView(beerList: beers)
             }
-            //.padding(.all, 10)
-            
+            .navigationBarHidden(true)
         }
-        .navigationBarHidden(true)
-        .ignoresSafeArea()
-        Spacer()
     }
-    
 }
 
 struct MainView_Previews: PreviewProvider {

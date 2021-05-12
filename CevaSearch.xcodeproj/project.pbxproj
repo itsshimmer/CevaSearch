@@ -11,7 +11,6 @@
 		9D3186582649C14D00442D8F /* HeaderUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3186572649C14D00442D8F /* HeaderUser.swift */; };
 		9D31865C2649CE0100442D8F /* HeaderUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31865B2649CE0100442D8F /* HeaderUserViewModel.swift */; };
 		B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49625442641C0F800166B49 /* CevaSearchApp.swift */; };
-		B49625472641C0F800166B49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49625462641C0F800166B49 /* ContentView.swift */; };
 		B49625492641C0FA00166B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49625482641C0FA00166B49 /* Assets.xcassets */; };
 		B496254C2641C0FA00166B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B496254B2641C0FA00166B49 /* Preview Assets.xcassets */; };
 		B4AD2EDC26430F73009C263E /* BeerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EDB26430F73009C263E /* BeerView.swift */; };
@@ -39,7 +38,6 @@
 		9D31865B2649CE0100442D8F /* HeaderUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderUserViewModel.swift; sourceTree = "<group>"; };
 		B49625412641C0F800166B49 /* CevaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CevaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49625442641C0F800166B49 /* CevaSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CevaSearchApp.swift; sourceTree = "<group>"; };
-		B49625462641C0F800166B49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B49625482641C0FA00166B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B496254B2641C0FA00166B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B496254D2641C0FA00166B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 				B4AD2ED926430F2B009C263E /* View */,
 				B4AD2ED826430F25009C263E /* Model */,
 				B49625442641C0F800166B49 /* CevaSearchApp.swift */,
-				B49625462641C0F800166B49 /* ContentView.swift */,
 				B49625482641C0FA00166B49 /* Assets.xcassets */,
 				B496254D2641C0FA00166B49 /* Info.plist */,
 				B496254A2641C0FA00166B49 /* Preview Content */,
@@ -232,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4AD2EED26431036009C263E /* BeerData.swift in Sources */,
-				B49625472641C0F800166B49 /* ContentView.swift in Sources */,
 				B4AD2EE62643100A009C263E /* MapView.swift in Sources */,
 				B4AD2EF026431070009C263E /* OnboardingViewModel.swift in Sources */,
 				9D3186582649C14D00442D8F /* HeaderUser.swift in Sources */,

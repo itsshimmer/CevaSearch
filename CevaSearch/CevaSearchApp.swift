@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct CevaSearchApp: App {
+    
+    @State var newUser: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            MainViewWithTabView()
+            if(newUser) {
+                OnboardingView(newUser: $newUser)
+            } else {
+                MainView()
+            }
         }
     }
 }

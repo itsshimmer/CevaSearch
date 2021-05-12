@@ -28,7 +28,7 @@ struct ScrollViewHorizontal: View {
         VStack {
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 90) {
+                    HStack(spacing: 90) {
                         ForEach(0..<5){ index in
                             GeometryReader { proxy in
                                 
@@ -48,18 +48,14 @@ struct ScrollViewHorizontal: View {
                         }
                     }
                     .padding(32)
-                    
                 }
             }
         }
     }
 }
 
-
 struct ScrollViewHorizontal_Previews: PreviewProvider {
     static var previews: some View {
         ScrollViewHorizontal()
     }
 }
-
-
