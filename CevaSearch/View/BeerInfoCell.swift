@@ -29,19 +29,21 @@ struct BeerInfoCell: View {
     
     var body: some View {
         
-        ZStack {
-            VStack(alignment: .leading) {
-                Image("friendship")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                Text(beer.name)
-                    .font(.title)
-                Text(beer.type)
-                    .font(.subheadline)
+        NavigationLink(destination: BeerView(beer: beer)) {
+            ZStack {
+                VStack(alignment: .leading) {
+                    Image("friendship")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Text(beer.name)
+                        .font(.title)
+                    Text(beer.type)
+                        .font(.subheadline)
+                }
+                //Text(isLiked ? "Liked!"  : "Unliked!")
+                StarButton(isLiked: $isLiked)
+                    .offset(x:-170 ,y:-138 )
             }
-            //Text(isLiked ? "Liked!"  : "Unliked!")
-            StarButton(isLiked: $isLiked)
-                .offset(x:-170 ,y:-138 )
         }
     }
 }

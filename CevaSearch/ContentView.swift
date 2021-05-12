@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var newUser: Bool = false
+    
     var body: some View {
-        MainView()
+        if(newUser) {
+            OnboardingView(newUser: $newUser)
+        } else {
+            MainView()
+        }
     }
 }
 

@@ -12,7 +12,7 @@ struct BeerSuggestionCellView: View {
     var beer: Beer
     
     var body: some View {
-        Button(action: {}) {
+        NavigationLink(destination: BeerView(beer: beer)) {
             beer.image
                 .resizable()
                 .frame(width: 35, height: 75)
