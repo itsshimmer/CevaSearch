@@ -37,7 +37,7 @@ struct ScrollViewHorizontal: View {
                                 let scale = getScale(proxy: proxy)
                                 
                                         VStack(spacing: 8) {
-                                            Image("chorona")
+                                            Image("corona")
                                                 .resizable()
                                                 .scaledToFill()
                                                 .frame(width: 160)
