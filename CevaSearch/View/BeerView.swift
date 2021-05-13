@@ -27,7 +27,7 @@ struct BeerView: View {
             
             ScrollView(.vertical, showsIndicators: false , content: {
                 GeometryReader{reader in
-                    Image("corona")
+                    beer.image
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .offset(y: -reader.frame(in: .global).minY)
