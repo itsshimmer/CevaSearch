@@ -9,6 +9,8 @@ import SwiftUI
 
 struct BeerView: View {
     var beer: Beer
+    
+    
     var body: some View {
         VStack {
             HStack{
@@ -34,89 +36,84 @@ struct BeerView: View {
                         //Add parallax effect...
                         .frame(width: UIScreen.main.bounds.width, height:
                                 reader.frame(in: .global).minY > 0 ?
-                                reader.frame(in: .global).minY + 480 : 480)
+                                reader.frame(in: .global).minY + 550 : 540)
                 }
                 .frame(height: 500)
                 
                 
                 VStack (alignment: .leading, spacing: 15){
+                    
+                    HStack(alignment: .center) {
+                        
+                        Rectangle()
+                            .fill(Color.gray)
+                            .frame(width: 80, height: 5)
+                            .cornerRadius(8)
+                            .offset(x:139 )
+                    }
                     HStack {
                         Text(beer.name)
                             //.padding()
                             .font(.title)
                         Spacer()
                     }
-                    VStack {
+                    VStack(alignment: .leading) {
+                        
                         HStack{
-                            Text("Tipo: \(beer.type)")
+                            Text("Size: \(beer.disponibility)")
+                                .font(.system(size: 15))
+                                Spacer(minLength: 2)
+                            Text("ABV: \(String(format: "%.2f", beer.abv))")
+                                .font(.system(size: 15))
                             Spacer()
+                            //Text("IBU: \(String(format: "%.2f", beer.ibu))")
                         }
                         HStack{
-                            Text("Cor: \(beer.color)")
-                            Spacer()
-                        }
-                        HStack{
-                            Text("ABV: \(beer.abv)")
-                            Spacer()
-                        }
-                        HStack{
-                            Text("IBU: \(beer.ibu)")
+                            Text("Color: \(beer.color)            ")
+                                .font(.system(size: 15))
+                            Spacer(minLength: 2)
+                            Text("IBU: \(String(format: "%.2f", beer.ibu))")
+                                .font(.system(size: 15))
                             Spacer()
                         }
                         HStack{
                             Text("Temperatura: \(beer.temperature)")
+                                .font(.system(size: 15))
                             Spacer()
+                            Text("Oring: \(beer.origin)")
+                                .font(.system(size: 15))
                         }
-                        HStack{
-                            Text("Harmonização: \(beer.food)")
-                            Spacer()
-                        }
-                        HStack{
-                            Text("Origem: \(beer.origin)")
-                            Spacer()
-                        }
-                        HStack{
-                            Text("Disponibilidade: \(beer.disponibility)")
-                            Spacer()
-                        }
-                        HStack {
-                            Button(action: {
-                                
-                            }) {
-                                Text("Get Directions")
-                                    .multilineTextAlignment(.leading)
-                            }
-                            Spacer()
-                        }
-                        .padding(.bottom)
                         
-                        Text(teste)
+                        HStack{
+                            Text("Tipo: \(beer.type)")
+                                .font(.system(size: 15))
+                            Spacer()
+                        }
+                        Divider()
+                            .background(Color.black)
+                        VStack(alignment: .leading){
+                            Text("Harmonização:")
+                            Text(beer.food)
+                                .font(.system(size: 15))
+                                
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        .frame( alignment: .leading)
+
                     }
                     
                 }
-                .padding(.top,35)
+                .padding(.top,30)
                 .padding(.horizontal)
-                .background(Color.gray)
+                .background(Color.white)
                 .cornerRadius(30)
-                .offset(y: -55)
+                .offset(y: 10)
                 
                 
             })
             .edgesIgnoringSafeArea(.all)
-            .background(Color.gray.edgesIgnoringSafeArea(.all))
+            .background(Color.white.edgesIgnoringSafeArea(.all))
             
-            //Spacer()
-            //            HStack {
-            //
-            //                Spacer()
-            //                Button(action: {
-            //
-            //                }) {
-            //                    Text("Share")
-            //                        .padding()
-            //                }
-            //            }
-            //            .background(Color.black)
         }
         .edgesIgnoringSafeArea(.all)
     }
