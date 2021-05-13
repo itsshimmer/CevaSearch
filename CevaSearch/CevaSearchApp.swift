@@ -17,7 +17,7 @@ struct CevaSearchApp: App {
             if(newUser) {
                 OnboardingView(newUser: $newUser)
             } else {
-                MainView()
+                MainViewWithTabView()
             }
         }
     }

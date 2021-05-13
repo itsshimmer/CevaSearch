@@ -13,6 +13,8 @@
 		B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49625442641C0F800166B49 /* CevaSearchApp.swift */; };
 		B49625492641C0FA00166B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49625482641C0FA00166B49 /* Assets.xcassets */; };
 		B496254C2641C0FA00166B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B496254B2641C0FA00166B49 /* Preview Assets.xcassets */; };
+		B4A10B1C264DAFBF006C7224 /* MyBeersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A10B18264DAFBF006C7224 /* MyBeersView.swift */; };
+		B4A10B1D264DAFBF006C7224 /* MainViewWithTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A10B19264DAFBF006C7224 /* MainViewWithTabView.swift */; };
 		B4AD2EDC26430F73009C263E /* BeerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EDB26430F73009C263E /* BeerView.swift */; };
 		B4AD2EE026430FDB009C263E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EDF26430FDB009C263E /* MainView.swift */; };
 		B4AD2EE326430FE7009C263E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EE226430FE7009C263E /* OnboardingView.swift */; };
@@ -41,6 +43,8 @@
 		B49625482641C0FA00166B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B496254B2641C0FA00166B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B496254D2641C0FA00166B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4A10B18264DAFBF006C7224 /* MyBeersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBeersView.swift; sourceTree = "<group>"; };
+		B4A10B19264DAFBF006C7224 /* MainViewWithTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewWithTabView.swift; sourceTree = "<group>"; };
 		B4AD2EDB26430F73009C263E /* BeerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerView.swift; sourceTree = "<group>"; };
 		B4AD2EDF26430FDB009C263E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B4AD2EE226430FE7009C263E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 		B4AD2ED926430F2B009C263E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B4A10B19264DAFBF006C7224 /* MainViewWithTabView.swift */,
+				B4A10B18264DAFBF006C7224 /* MyBeersView.swift */,
 				B4AD2EE226430FE7009C263E /* OnboardingView.swift */,
 				B4AD2EDF26430FDB009C263E /* MainView.swift */,
 				B4AD2EDB26430F73009C263E /* BeerView.swift */,
@@ -242,7 +248,9 @@
 				B4BAB93A2649CB0800DD4177 /* SearchBarView.swift in Sources */,
 				B4BAB93D2649CD7300DD4177 /* SearchHeaderView.swift in Sources */,
 				B4B1D263264AF3FC00E5EE9B /* BeerSuggestionCellView.swift in Sources */,
+				B4A10B1C264DAFBF006C7224 /* MyBeersView.swift in Sources */,
 				B4B1D260264AF3EB00E5EE9B /* BeerSuggestionView.swift in Sources */,
+				B4A10B1D264DAFBF006C7224 /* MainViewWithTabView.swift in Sources */,
 				9D2B269F2643307F00C2DC14 /* BeerInfoCell.swift in Sources */,
 				B4AD2EF726431091009C263E /* DetailViewModel.swift in Sources */,
 				B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */,
