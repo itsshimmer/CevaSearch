@@ -28,7 +28,7 @@ struct ProfileView: View {
                             .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         Spacer()
                         Image(systemName: "camera")
-                            .padding(.bottom, 75)
+                            .padding(.bottom, 35)
                     }
                 }
             }
