@@ -12,13 +12,16 @@ import SwiftUI
 struct ScrollViewHorizontal: View {
     
     private func getScale(proxy: GeometryProxy) -> CGFloat{
-        var scale:CGFloat = 1
+        let midPoint: CGFloat = 125
         
-        let x = proxy.frame(in: .global).minX
+        let viewFrame = proxy.frame(in: CoordinateSpace.global)
         
-        let diff = abs(x)
-        if diff < 100 {
-            scale = 1 + (100 - diff) / 500
+        var scale: CGFloat = 1.0
+        let deltaXAnimationThreshold: CGFloat = 125
+        
+        let diffFromCenter = abs(midPoint - viewFrame.origin.x - deltaXAnimationThreshold / 2)
+        if diffFromCenter < deltaXAnimationThreshold {
+            scale = 1 + (deltaXAnimationThreshold - diffFromCenter) / 500
         }
         
         return scale
@@ -28,27 +31,42 @@ struct ScrollViewHorizontal: View {
         VStack {
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 90) {
+                    HStack(spacing: 10) {
                         ForEach(0..<5){ index in
                             GeometryReader { proxy in
+                                let scale = getScale(proxy: proxy)
                                 
-                                let scale  = getScale(proxy: proxy)
-                                
-                                Image("friendship")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 180)
-                                    .clipped()
-                                    .cornerRadius(15)
-                                    .shadow(radius: 5)
-                                    .scaleEffect(CGSize(width: scale, height: scale))
+                                        VStack(spacing: 8) {
+                                            Image("chorona")
+                                                .resizable()
+                                                .scaledToFill()
+                                                .frame(width: 160)
+                                                .clipped()
+                                                .cornerRadius(8)
+                                                .overlay(
+                                                    RoundedRectangle(cornerRadius: 8)
+                                                        .stroke(Color(white: 0.4))
+                                                )
+                                                .shadow(radius: 3)
+                                           
+                                        }
+                                    
+                                    
+                                    .scaleEffect(.init(width: scale, height: scale))
+                                    //                            .animation(.spring(), value: 1)
+                                    .animation(.easeOut(duration: 1))
+                                    
+                                    .padding(.vertical)
                             }
                             
-                            .frame(width: 125, height: 200)
+                            .frame(width: 130, height: 300)
                         }
+                        .padding(.horizontal, 32)
+                        .padding(.vertical, 32)
                     }
                     .padding(32)
                 }
+                .frame( height: 300)
             }
         }
     }
