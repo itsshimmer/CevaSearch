@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct ScrollViewHorizontal: View {
+struct HorizontalScrollView: View {
     
     private func getScale(proxy: GeometryProxy) -> CGFloat{
         let midPoint: CGFloat = 125
@@ -32,24 +32,25 @@ struct ScrollViewHorizontal: View {
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 10) {
-                        ForEach(0..<5){ index in
-                            GeometryReader { proxy in
-                                let scale = getScale(proxy: proxy)
-                                
-                                        VStack(spacing: 8) {
-                                            Image("corona")
-                                                .resizable()
-                                                .scaledToFill()
-                                                .frame(width: 160)
-                                                .clipped()
-                                                .cornerRadius(8)
-                                                .overlay(
-                                                    RoundedRectangle(cornerRadius: 8)
-                                                        .stroke(Color(white: 0.4))
-                                                )
-                                                .shadow(radius: 3)
-                                           
-                                        }
+                        ForEach(beers.shuffled()) { beer in
+                            NavigationLink(destination: BeerView(beer: beer)) {
+                                GeometryReader { proxy in
+                                    let scale = getScale(proxy: proxy)
+                                    
+                                    VStack(spacing: 8) {
+                                        beer.image
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(width: 160)
+                                            .clipped()
+                                            .cornerRadius(8)
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: 8)
+                                                    .stroke(Color(white: 0.4))
+                                            )
+                                            .shadow(radius: 3)
+                                        
+                                    }
                                     
                                     
                                     .scaleEffect(.init(width: scale, height: scale))
@@ -57,6 +58,7 @@ struct ScrollViewHorizontal: View {
                                     .animation(.easeOut(duration: 1))
                                     
                                     .padding(.vertical)
+                                }
                             }
                             
                             .frame(width: 130, height: 300)
@@ -74,6 +76,6 @@ struct ScrollViewHorizontal: View {
 
 struct ScrollViewHorizontal_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollViewHorizontal()
+        HorizontalScrollView()
     }
 }

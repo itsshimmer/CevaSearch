@@ -15,19 +15,9 @@ struct MainView: View {
             VStack(alignment: .leading) {
                 HeaderUser(userName: "Brentano")
                 SearchHeaderView()
-                VStack(alignment: .leading) {
-                    Text("7 results founded")
-                        .font(.subheadline)
-                        .fontWeight(.semibold).multilineTextAlignment(.leading)
-                    List(beers) { beer in
-                        NavigationLink(
-                            destination: BeerView(beer: beer)
-                        ) {
-                            BeerInfoCell(beer: beer)
-                        }
-                    }
-                }
+                HorizontalScrollView()
                 BeerSuggestionView(beerList: beers)
+                Spacer()
             }
             .navigationBarHidden(true)
         }
