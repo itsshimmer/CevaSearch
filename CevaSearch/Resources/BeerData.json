@@ -89,6 +89,46 @@
         "origin": "Brasil 🇧🇷",
         "disponibility": "Lata 350ml",
         "imageName": ""
-      
+        
+    },
+    {
+        "id": 1008,
+        "name": "GUINNESS® DRAUGHT”,
+        "type": "Stout",
+        "ibu": 45,
+        "color": "Preta",
+        "abv": 4.2,
+        "temperature": "8º a 12º",
+        "food": "Ostras, tábua de frios, queijo gorgonzola“,
+        "origin": "Irlanda 🇮🇪",
+        "disponibility": "Lata 355 ml",
+        "imageName": "Guinness"
+        
+    },
+    {
+        "id": 1009,
+        "name": "Red Stripe”,
+        "type": "Standard American Lager”,
+        "ibu": 23,
+        "color": "Amarelo",
+        "abv": 4.7,
+        "temperature": "0º a 4º",
+        "food": "Saladas, Frutos do Mar“,
+        "origin": "Jamaica 🇯🇲",
+        "disponibility": "Garrafa 330 ml",
+        "imageName": "RedStripe”
+    },
+    {
+        "id": 1010,
+        "name": "Pilsner Urquell”,
+        "type": "Lager”,
+        "ibu": 37,
+        "color": "Amarelo Dourado",
+        "abv": 4.4,
+        "temperature": "2º a 4º",
+        "food": "Pizza Calabresa, Queijos, Saladas“,
+        "origin": "Republica Tcheca 🇨🇿",
+        "disponibility": "Garrafa 500 ml",
+        "imageName": "pilsenerUrquel"
     }
 ]
