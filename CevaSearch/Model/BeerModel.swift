@@ -9,6 +9,9 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
+let userDefaults = UserDefaults.standard
+var favourites = userDefaults.object(forKey: "IsFavourite") as? [Int] ?? []
+
 struct Beer: Hashable, Codable, Identifiable {
     
     var id: Int
@@ -25,5 +28,19 @@ struct Beer: Hashable, Codable, Identifiable {
     private var imageName: String
         var image: Image {
             Image(imageName)
+    }
+
+    var isFavourite: Bool {
+        get {
+            return favourites.contains(self.id)
+        }
+        set(newValue) {
+            if newValue == true {
+                favourites.append(self.id)
+            } else {
+                favourites = favourites.filter { $0 != self.id }
+            }
+            userDefaults.set(favourites, forKey: "IsFavourite")
+        }
     }
 }

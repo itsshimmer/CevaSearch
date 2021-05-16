@@ -13,7 +13,6 @@
 		B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49625442641C0F800166B49 /* CevaSearchApp.swift */; };
 		B49625492641C0FA00166B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49625482641C0FA00166B49 /* Assets.xcassets */; };
 		B496254C2641C0FA00166B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B496254B2641C0FA00166B49 /* Preview Assets.xcassets */; };
-		B4A10B1C264DAFBF006C7224 /* MyBeersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A10B18264DAFBF006C7224 /* MyBeersView.swift */; };
 		B4A10B1D264DAFBF006C7224 /* MainViewWithTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A10B19264DAFBF006C7224 /* MainViewWithTabView.swift */; };
 		B4A10B21264DB4B8006C7224 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A10B20264DB4B8006C7224 /* ProfileView.swift */; };
 		B4AD2EDC26430F73009C263E /* BeerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EDB26430F73009C263E /* BeerView.swift */; };
@@ -33,6 +32,7 @@
 		B4E7C6CC2643289B00905924 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E7C6CB2643289B00905924 /* BeerModel.swift */; };
 		CD9812872649C10C003C7EA8 /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9812862649C10C003C7EA8 /* HorizontalScrollView.swift */; };
 		FA07980226431EDD0060856B /* BeerData.json in Resources */ = {isa = PBXBuildFile; fileRef = FA07980126431EDD0060856B /* BeerData.json */; };
+		FA0C0EFF26507D0B003FA30A /* FavsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C0EFE26507D0B003FA30A /* FavsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,6 @@
 		B49625482641C0FA00166B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B496254B2641C0FA00166B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B496254D2641C0FA00166B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4A10B18264DAFBF006C7224 /* MyBeersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBeersView.swift; sourceTree = "<group>"; };
 		B4A10B19264DAFBF006C7224 /* MainViewWithTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewWithTabView.swift; sourceTree = "<group>"; };
 		B4A10B20264DB4B8006C7224 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B4AD2EDB26430F73009C263E /* BeerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerView.swift; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		B4E7C6CB2643289B00905924 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
 		CD9812862649C10C003C7EA8 /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
 		FA07980126431EDD0060856B /* BeerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BeerData.json; sourceTree = "<group>"; };
+		FA0C0EFE26507D0B003FA30A /* FavsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				B4A10B19264DAFBF006C7224 /* MainViewWithTabView.swift */,
-				B4A10B18264DAFBF006C7224 /* MyBeersView.swift */,
+				FA0C0EFE26507D0B003FA30A /* FavsView.swift */,
 				B4AD2EE226430FE7009C263E /* OnboardingView.swift */,
 				B4AD2EDF26430FDB009C263E /* MainView.swift */,
 				B4AD2EDB26430F73009C263E /* BeerView.swift */,
@@ -249,9 +249,9 @@
 				B4AD2EEA26431020009C263E /* MapModel.swift in Sources */,
 				B4AD2EE326430FE7009C263E /* OnboardingView.swift in Sources */,
 				B4BAB93A2649CB0800DD4177 /* SearchBarView.swift in Sources */,
+				FA0C0EFF26507D0B003FA30A /* FavsView.swift in Sources */,
 				B4BAB93D2649CD7300DD4177 /* SearchHeaderView.swift in Sources */,
 				B4B1D263264AF3FC00E5EE9B /* BeerSuggestionCellView.swift in Sources */,
-				B4A10B1C264DAFBF006C7224 /* MyBeersView.swift in Sources */,
 				B4B1D260264AF3EB00E5EE9B /* BeerSuggestionView.swift in Sources */,
 				B4A10B1D264DAFBF006C7224 /* MainViewWithTabView.swift in Sources */,
 				B4A10B21264DB4B8006C7224 /* ProfileView.swift in Sources */,

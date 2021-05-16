@@ -14,9 +14,9 @@ struct MainViewWithTabView: View {
                 .tabItem {
                     Label("Ceva", systemImage: "link.circle.fill")
                 }
-            MyBeersView()
+            FavsView()
                 .tabItem {
-                    Label("My Beers", systemImage: "star.fill")
+                    Label("Favs", systemImage: "star.fill")
                 }
         }
     }
