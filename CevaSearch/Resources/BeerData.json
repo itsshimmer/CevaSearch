@@ -130,5 +130,48 @@
         "origin": "Republica Tcheca 🇨🇿",
         "disponibility": "Garrafa 500 ml",
         "imageName": "pilsenerUrquel"
+    },
+    {
+        "id": 1011 ,
+        "name": "Tupiniquim Monjolo",
+        "type": "Imperial Porter",
+        "ibu": 35,
+        "color": "Negro",
+        "abv": 10.5 ,
+        "temperature":"8º a 12º" ,
+        "food": "Chocolate, Comidas Apimentadas, Queijos Defumados, Salsicha,Trufa de Chocolate, Cervejas que tem boa presença do malte também costumam harmonizar muito bem com doce de leite! Isso mesmo, coloque a cerveja e o doce ao mesmo tempo na boca e você vai sentir um terceiro sabor: capuccino!",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Garrafa 310ml",
+        "imageName":"tupiniquin"
+        
+    },
+    {
+        "id": 1012,
+        "name": "Krug Submissão",
+        "type": "India Pale Ale (IPA)",
+        "ibu": 3,
+        "color": "Amarelo Palha",
+        "abv": 3.9,
+        "temperature": "4º a 6º",
+        "food": "salada de folhas, batata temperada com limão e pimenta, e sushis",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Garrafa 500ml",
+        "imageName": "cervejaKrug"
+    },
+    {
+        "id": 1013,
+        "name": "Eisenbahn Dunkel",
+        "type": "Schwarzbier",
+        "ibu": 30,
+        "color": "Negra",
+        "abv": 4.8,
+        "temperature": "4º a 6º",
+        "food": "Churrasco, feijoada, carne de porco com molhos de frutas, chucrute, carnes assadas, combinações doces e salgadas, salsichas, frango assado, peixes encorpados, molhos funghi, comida chinesa e queijos duros como grana padano, parmesão, pecorino e cheddar (tradicional). Combina também com charutos.",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Garrafa 355ml",
+        "imageName":"Eisenbahn-Dunkel"
+
     }
+
+
 ]

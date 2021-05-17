@@ -59,6 +59,7 @@ struct StarButton: View{
     
     
     var body: some View{
+        
         Button(action: {
             self.animate = true
             
