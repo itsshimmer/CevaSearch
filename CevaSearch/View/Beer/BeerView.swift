@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct BeerView: View {
-    
+//    MARK: as imagens devem ter o mesmo tamanho a 480 ou um pouco mais, imagens muito grandes ficam complicadas de lidar e causam bugs
+   
     var beer: Beer
     
     var body: some View {
