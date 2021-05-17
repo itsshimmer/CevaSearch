@@ -130,5 +130,44 @@
         "origin": "Republica Tcheca 🇨🇿",
         "disponibility": "Garrafa 500 ml",
         "imageName": "pilsenerUrquel"
+    },
+    {
+        "id": 1011,
+        "name": "Paulaner Hefe Weissbier Naturtrüb",
+        "type": "German Heffeweizen",
+        "ibu": 13,
+        "color": "Amarelo turvo",
+        "abv": 5.5,
+        "temperature": "4º a 8º",
+        "food": "Aves, Peixes, Saladas",
+        "origin": "Alemanha 🇩🇪",
+        "disponibility": "Garrafa 500 ml, Garrafa 330 ml",
+        "imageName": "PaulanerHefeWeissbierNaturtrub"
+    },
+    {
+        "id": 1012,
+        "name": "Baden Baden Witbier",
+        "type": "Belgian Witbier",
+        "ibu": 11,
+        "color": "Clara",
+        "abv": 4.9,
+        "temperature": "3º a 5º",
+        "food": "Peixes suaves, sushi, furtos do mar, queijo brie, camembert e quieijos de cabra.",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Garrafa 600 ml, Lata 350 ml",
+        "imageName": "BadenBadenWitbier"
+    },
+    {
+        "id": 1013,
+        "name": "AlCapone Premium Lager",
+        "type": "Lager",
+        "ibu": 15,
+        "color": "Dourada",
+        "abv": 4.5,
+        "temperature": "0º a 4º",
+        "food": "Frutos do mar, sopas e saladas",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Garrafa 500 ml",
+        "imageName": "AlCaponePremiumLager"
     }
 ]

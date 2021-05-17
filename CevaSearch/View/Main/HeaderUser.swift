@@ -16,28 +16,33 @@ struct HeaderUser: View {
     @State var day = DateDisplay().displayDay()
     
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text("Hi, \(userName)")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(    .leading)
-                Spacer()
-                Button(action: {}) {
-                    HStack {
-                        Image(systemName: "person.fill")
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(Color.black)
-                    }
-                    .padding()
-                    .background(Color.gray)
-                    .mask(Circle())
+        HStack {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Hi, \(userName)")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(    .leading)
+                    Spacer()
+                    
                 }
+                Text("\(month) \(day)th, \(year)")
+                    .font(.subheadline)
             }
-            Text("\(month) \(day)th, \(year)")
-                .font(.subheadline)
+            .padding([.top, .leading, .trailing])
+            Button(action: {}) {
+                HStack {
+                    Image(systemName: "person.fill")
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color.black)
+                }
+                .padding()
+                .background(Color.gray)
+                .mask(Circle())
+            }
+            .padding()
+            .padding(.top)
         }
-        .padding([.top, .leading, .trailing])
     }
 }
 
