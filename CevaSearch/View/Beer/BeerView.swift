@@ -26,13 +26,13 @@ struct BeerView: View {
                 }
                 .frame(height: 500)
                 VStack {
+                    Spacer()
                     HStack {
                         Spacer()
                         FavsButton(beer: beer)
-                            .padding(.top, 125)
-                            .padding(.horizontal, 100)
+                            .padding(.horizontal, 30)
+                            .padding(.bottom, 40)
                     }
-                    Spacer()
                 }
             }
             VStack (alignment: .leading, spacing: 15){
