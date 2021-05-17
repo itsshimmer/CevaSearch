@@ -12,20 +12,7 @@ struct BeerView: View {
     var beer: Beer
     
     var body: some View {
-        VStack {
-//            MARK: Não sei se estão sobrando essa HStack e esse botão "Close". Pelo que entendi, é para aparecer a navbar no topo, mas no layout a imagem (wireframe) vai até o topo da tela.
-//            HStack{
-//                Button(action: {
-//
-//                }) {
-//                    Text("Close")
-//                        .padding()
-//                }
-//                Spacer()
-//                Text("Profile")
-//                    .padding()
-//            }
-//            .background(Color.black)
+
             
             ScrollView(.vertical, showsIndicators: false , content: {
                 GeometryReader{reader in
@@ -36,15 +23,17 @@ struct BeerView: View {
                         //Add parallax effect...
                         .frame(width: UIScreen.main.bounds.width, height:
                                 reader.frame(in: .global).minY > 0 ?
-                                reader.frame(in: .global).minY + 550 : 540)
+                                reader.frame(in: .global).minY + 480: 450)
                 }
-                .frame(height: 500)
-                // MARK: posicionar direito o FavsButton.
-                FavsButton(beer: beer)
+                .frame(height: 480)
+                
+                
                 VStack (alignment: .leading, spacing: 15){
+                    
                     HStack(alignment: .center) {
+                        
                         Rectangle()
-                            .fill(Color.gray)
+                            .fill(Color.black)
                             .frame(width: 80, height: 5)
                             .cornerRadius(8)
                             .offset(x:139 )
@@ -55,6 +44,7 @@ struct BeerView: View {
                         Spacer()
                     }
                     VStack(alignment: .leading) {
+                        
                         HStack{
                             Text("Size: \(beer.disponibility)")
                                 .font(.system(size: 15))
@@ -75,9 +65,10 @@ struct BeerView: View {
                             Text("Temperatura: \(beer.temperature)")
                                 .font(.system(size: 15))
                             Spacer()
-                            Text("Origem: \(beer.origin)")
+                            Text("Oring: \(beer.origin)")
                                 .font(.system(size: 15))
                         }
+                        
                         HStack{
                             Text("Tipo: \(beer.type)")
                                 .font(.system(size: 15))
@@ -89,21 +80,27 @@ struct BeerView: View {
                             Text("Harmonização:")
                             Text(beer.food)
                                 .font(.system(size: 15))
+                                .padding(.bottom, 30.0)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
                         .frame( alignment: .leading)
+
                     }
+                    .padding(.bottom, 30.0)
+                    
                 }
                 .padding(.top,30)
                 .padding(.horizontal)
-                .background(Color.white)
+                .background(Color.gray)
                 .cornerRadius(30)
-                .offset(y: 10)
+                .offset(y: -35)
+                
+                
+                
             })
-            .edgesIgnoringSafeArea(.all)
-            .background(Color.white.edgesIgnoringSafeArea(.all))
-        }
-        .edgesIgnoringSafeArea(.all)
+            //.edgesIgnoringSafeArea(.top)
+            .background(Color.gray.edgesIgnoringSafeArea(.all))
+            
     }
 }
 
