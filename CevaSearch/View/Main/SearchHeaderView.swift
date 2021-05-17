@@ -11,13 +11,15 @@ struct SearchHeaderView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Find your favorite beer")
-                    .font(.title)
+                Text("Encontre sua cerveja favorita")
+                    .bold()
+                    .font(.title2)
                     .padding(.leading)
                 Spacer()
             }
             SearchBarView()
-                .padding()
+                .padding(.leading)
+                .padding(.trailing)
         }
     }
 }

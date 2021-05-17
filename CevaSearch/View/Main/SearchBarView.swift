@@ -12,9 +12,13 @@ struct SearchBarView: View {
     @State var searchText = ""
     
     var body: some View {
-        TextField("🔍 Search a beer for name, IBU, type, color...",text: $searchText)
-            .foregroundColor(.gray)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+        ZStack {
+            TextField("   \(Image(systemName: "magnifyingglass")) Procure por uma cerveja pelo nome, IBU, tipo, cor...",text: $searchText)
+                .frame(width: .infinity, height: 50, alignment: .center)
+                .background(Color.gray)
+                .cornerRadius(8)
+                
+        }
     }
 }
 

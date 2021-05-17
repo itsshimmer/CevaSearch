@@ -16,6 +16,7 @@ struct BeerSuggestionView: View {
             HStack {
                 ForEach(beerList.shuffled()) { beer in
                     BeerSuggestionCellView(beer: beer)
+                        .padding(.horizontal, 4)
                 }
             }
         }

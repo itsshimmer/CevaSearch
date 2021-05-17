@@ -28,19 +28,28 @@ struct BeerView: View {
 //            .background(Color.black)
             
             ScrollView(.vertical, showsIndicators: false , content: {
-                GeometryReader{reader in
-                    beer.image
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .offset(y: -reader.frame(in: .global).minY)
-                        //Add parallax effect...
-                        .frame(width: UIScreen.main.bounds.width, height:
-                                reader.frame(in: .global).minY > 0 ?
-                                reader.frame(in: .global).minY + 550 : 540)
+                ZStack {
+                    GeometryReader{reader in
+                        beer.image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .offset(y: -reader.frame(in: .global).minY)
+                            //Add parallax effect...
+                            .frame(width: UIScreen.main.bounds.width, height:
+                                    reader.frame(in: .global).minY > 0 ?
+                                    reader.frame(in: .global).minY + 550 : 540)
+                    }
+                    .frame(height: 500)
+                    VStack {
+                        HStack {
+                            Spacer()
+                            FavsButton(beer: beer)
+                                .padding(.top, 125)
+                                .padding(.horizontal, 100)
+                        }
+                        Spacer()
+                    }
                 }
-                .frame(height: 500)
-                // MARK: posicionar direito o FavsButton.
-                FavsButton(beer: beer)
                 VStack (alignment: .leading, spacing: 15){
                     HStack(alignment: .center) {
                         Rectangle()

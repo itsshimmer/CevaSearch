@@ -17,6 +17,7 @@ struct MainView: View {
                 SearchHeaderView()
                 HorizontalScrollView()
                 BeerSuggestionView(beerList: beers)
+                    .padding(.bottom)
                 Spacer()
             }
             .navigationBarHidden(true)

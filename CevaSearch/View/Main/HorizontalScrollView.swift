@@ -9,9 +9,11 @@ import SwiftUI
 
 struct HorizontalScrollView: View {
     
+    @State var render:Bool = false
+    
     private func getScale(proxy: GeometryProxy) -> CGFloat{
-        let midPoint: CGFloat = 125
         let viewFrame = proxy.frame(in: CoordinateSpace.global)
+        let midPoint: CGFloat = 215
         var scale: CGFloat = 1.0
         let deltaXAnimationThreshold: CGFloat = 125
         
@@ -28,36 +30,52 @@ struct HorizontalScrollView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 10) {
                         ForEach(beers.shuffled()) { beer in
-                            NavigationLink(destination: BeerView(beer: beer)) {
+                            ZStack {
                                 GeometryReader { proxy in
                                     let scale = getScale(proxy: proxy)
                                     VStack(spacing: 8) {
-                                        beer.image
-                                            .resizable()
-                                            .scaledToFill()
-                                            .frame(width: 160)
-                                            .clipped()
-                                            .cornerRadius(8)
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 8)
-                                                    .stroke(Color(white: 0.4))
-                                            )
-                                            .shadow(radius: 3)
+                                        ZStack {
+                                            NavigationLink(destination: BeerView(beer: beer)) {
+                                            beer.image
+                                                .resizable()
+                                                .scaledToFill()
+                                                .frame(width: 160)
+                                                .clipped()
+                                                .cornerRadius(8)
+                                                .overlay(
+                                                    RoundedRectangle(cornerRadius: 8)
+                                                        .stroke(Color(white: 0.4))
+                                                )
+                                                .shadow(radius: 3)
+                                            }
+                                            VStack {
+                                                HStack {
+                                                    Spacer()
+                                                    FavsButton(beer: beer)
+                                                        .padding()
+                                                }
+                                                Spacer()
+                                            }
+                                        }
+                                        
                                     }
                                     .scaleEffect(.init(width: scale, height: scale))
-//                                    .animation(.spring(), value: 1)
+                                    //                                    .animation(.spring(), value: 1)
                                     .animation(.easeOut(duration: 1))
                                     .padding(.vertical)
                                 }
+                                
+                                .frame(width: 130, height: 300)
+                                
+                                
                             }
-                            .frame(width: 130, height: 300)
                         }
                         .padding(.horizontal, 32)
                         .padding(.vertical, 32)
                     }
                     .padding(32)
                 }
-                .frame( height: 300)
+                .frame( height: 400)
             }
         }
     }

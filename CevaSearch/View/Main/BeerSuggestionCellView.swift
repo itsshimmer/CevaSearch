@@ -21,6 +21,7 @@ struct BeerSuggestionCellView: View {
                 .padding()
                 .background(Color.gray)
                 .mask(Circle())
+                .shadow(radius: 5, x: 1, y: 5)
         }
     }
 }
