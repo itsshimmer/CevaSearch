@@ -24,6 +24,23 @@ struct Beer: Hashable, Codable, Identifiable {
     
     private var imageName: String
         var image: Image {
-            Image(imageName)
+            if imageName == "" {
+                return Image("beer default")
+            } else {
+                return Image(imageName)
+            }
+    }
+
+    var isFavourite: Bool {
+        get {
+            return FavouriteManager.isBeerFavourited(id: self.id)
+        }
+        set(newValue) {
+            if newValue == true {
+                FavouriteManager.favouriteBeer(id: self.id)
+            } else {
+                FavouriteManager.unfavouriteBeer(id: self.id)
+            }
+        }
     }
 }

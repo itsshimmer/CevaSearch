@@ -49,7 +49,7 @@ struct BeerInfoCell: View {
 
 
 struct StarButton: View{
-    @Binding  var isLiked: Bool
+    @Binding var isLiked: Bool
     
     private let animationDuration: Double = 0.1
     private var animationScale: CGFloat {
@@ -63,13 +63,11 @@ struct StarButton: View{
             self.animate = true
             
             DispatchQueue.main.asyncAfter(deadline: .now() +
-                                            self.animationDuration,execute: {
-                                                self.animate = false
-                                                self.isLiked.toggle()
-                                            })
-            
-            
-        },  label: {
+                self.animationDuration,execute: {
+                    self.animate = false
+                    self.isLiked.toggle()
+            })
+        }, label: {
             Image(systemName: isLiked ? "star.fill": "star")
                 .resizable()
                 .aspectRatio(contentMode: .fit)

@@ -1,5 +1,3 @@
-
-
 //
 //  ScrollViewHorizontal.swift
 //  CevaSearch
@@ -13,9 +11,7 @@ struct HorizontalScrollView: View {
     
     private func getScale(proxy: GeometryProxy) -> CGFloat{
         let midPoint: CGFloat = 125
-        
         let viewFrame = proxy.frame(in: CoordinateSpace.global)
-        
         var scale: CGFloat = 1.0
         let deltaXAnimationThreshold: CGFloat = 125
         
@@ -23,7 +19,6 @@ struct HorizontalScrollView: View {
         if diffFromCenter < deltaXAnimationThreshold {
             scale = 1 + (deltaXAnimationThreshold - diffFromCenter) / 500
         }
-        
         return scale
     }
     var body: some View {
@@ -36,7 +31,6 @@ struct HorizontalScrollView: View {
                             NavigationLink(destination: BeerView(beer: beer)) {
                                 GeometryReader { proxy in
                                     let scale = getScale(proxy: proxy)
-                                    
                                     VStack(spacing: 8) {
                                         beer.image
                                             .resizable()
@@ -49,18 +43,13 @@ struct HorizontalScrollView: View {
                                                     .stroke(Color(white: 0.4))
                                             )
                                             .shadow(radius: 3)
-                                        
                                     }
-                                    
-                                    
                                     .scaleEffect(.init(width: scale, height: scale))
-                                    //                            .animation(.spring(), value: 1)
+//                                    .animation(.spring(), value: 1)
                                     .animation(.easeOut(duration: 1))
-                                    
                                     .padding(.vertical)
                                 }
                             }
-                            
                             .frame(width: 130, height: 300)
                         }
                         .padding(.horizontal, 32)

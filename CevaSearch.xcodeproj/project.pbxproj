@@ -13,7 +13,6 @@
 		B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49625442641C0F800166B49 /* CevaSearchApp.swift */; };
 		B49625492641C0FA00166B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49625482641C0FA00166B49 /* Assets.xcassets */; };
 		B496254C2641C0FA00166B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B496254B2641C0FA00166B49 /* Preview Assets.xcassets */; };
-		B4A10B1C264DAFBF006C7224 /* MyBeersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A10B18264DAFBF006C7224 /* MyBeersView.swift */; };
 		B4A10B1D264DAFBF006C7224 /* MainViewWithTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A10B19264DAFBF006C7224 /* MainViewWithTabView.swift */; };
 		B4A10B21264DB4B8006C7224 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A10B20264DB4B8006C7224 /* ProfileView.swift */; };
 		B4AD2EDC26430F73009C263E /* BeerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD2EDB26430F73009C263E /* BeerView.swift */; };
@@ -33,6 +32,9 @@
 		B4E7C6CC2643289B00905924 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E7C6CB2643289B00905924 /* BeerModel.swift */; };
 		CD9812872649C10C003C7EA8 /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9812862649C10C003C7EA8 /* HorizontalScrollView.swift */; };
 		FA07980226431EDD0060856B /* BeerData.json in Resources */ = {isa = PBXBuildFile; fileRef = FA07980126431EDD0060856B /* BeerData.json */; };
+		FA0C0EFF26507D0B003FA30A /* FavsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C0EFE26507D0B003FA30A /* FavsView.swift */; };
+		FAF4B3472651298B00F65D21 /* FavouriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4B3462651298B00F65D21 /* FavouriteManager.swift */; };
+		FAF4B35026519F1D00F65D21 /* FavsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4B34F26519F1D00F65D21 /* FavsButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +46,6 @@
 		B49625482641C0FA00166B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B496254B2641C0FA00166B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B496254D2641C0FA00166B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4A10B18264DAFBF006C7224 /* MyBeersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBeersView.swift; sourceTree = "<group>"; };
 		B4A10B19264DAFBF006C7224 /* MainViewWithTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewWithTabView.swift; sourceTree = "<group>"; };
 		B4A10B20264DB4B8006C7224 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B4AD2EDB26430F73009C263E /* BeerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerView.swift; sourceTree = "<group>"; };
@@ -64,6 +65,9 @@
 		B4E7C6CB2643289B00905924 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
 		CD9812862649C10C003C7EA8 /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
 		FA07980126431EDD0060856B /* BeerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BeerData.json; sourceTree = "<group>"; };
+		FA0C0EFE26507D0B003FA30A /* FavsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsView.swift; sourceTree = "<group>"; };
+		FAF4B3462651298B00F65D21 /* FavouriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteManager.swift; sourceTree = "<group>"; };
+		FAF4B34F26519F1D00F65D21 /* FavsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 		B49625432641C0F800166B49 /* CevaSearch */ = {
 			isa = PBXGroup;
 			children = (
+				FAF4B3452651296300F65D21 /* Helpers */,
 				FA07980026431EAE0060856B /* Resources */,
 				B4AD2EDA26430F35009C263E /* ViewModel */,
 				B4AD2ED926430F2B009C263E /* View */,
@@ -129,20 +134,13 @@
 		B4AD2ED926430F2B009C263E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B4A10B19264DAFBF006C7224 /* MainViewWithTabView.swift */,
-				B4A10B18264DAFBF006C7224 /* MyBeersView.swift */,
-				B4AD2EE226430FE7009C263E /* OnboardingView.swift */,
-				B4AD2EDF26430FDB009C263E /* MainView.swift */,
-				B4AD2EDB26430F73009C263E /* BeerView.swift */,
-				B4AD2EE52643100A009C263E /* MapView.swift */,
+				FAF4B34D26513A1700F65D21 /* Onboarding */,
+				FAF4B3482651370200F65D21 /* Main */,
+				FAF4B34A265139CE00F65D21 /* Beer */,
+				FAF4B34B265139E900F65D21 /* Profile */,
+				FAF4B349265139C300F65D21 /* Favs */,
+				FAF4B34C26513A0F00F65D21 /* Map */,
 				9D2B269E2643307F00C2DC14 /* BeerInfoCell.swift */,
-				CD9812862649C10C003C7EA8 /* HorizontalScrollView.swift */,
-				B4BAB9392649CB0800DD4177 /* SearchBarView.swift */,
-				B4BAB93C2649CD7300DD4177 /* SearchHeaderView.swift */,
-				9D3186572649C14D00442D8F /* HeaderUser.swift */,
-				B4B1D25F264AF3EB00E5EE9B /* BeerSuggestionView.swift */,
-				B4B1D262264AF3FC00E5EE9B /* BeerSuggestionCellView.swift */,
-				B4A10B20264DB4B8006C7224 /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +163,70 @@
 				FA07980126431EDD0060856B /* BeerData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAF4B3452651296300F65D21 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAF4B3462651298B00F65D21 /* FavouriteManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FAF4B3482651370200F65D21 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B4A10B19264DAFBF006C7224 /* MainViewWithTabView.swift */,
+				B4AD2EDF26430FDB009C263E /* MainView.swift */,
+				9D3186572649C14D00442D8F /* HeaderUser.swift */,
+				B4BAB93C2649CD7300DD4177 /* SearchHeaderView.swift */,
+				B4BAB9392649CB0800DD4177 /* SearchBarView.swift */,
+				CD9812862649C10C003C7EA8 /* HorizontalScrollView.swift */,
+				B4B1D25F264AF3EB00E5EE9B /* BeerSuggestionView.swift */,
+				B4B1D262264AF3FC00E5EE9B /* BeerSuggestionCellView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FAF4B349265139C300F65D21 /* Favs */ = {
+			isa = PBXGroup;
+			children = (
+				FA0C0EFE26507D0B003FA30A /* FavsView.swift */,
+				FAF4B34F26519F1D00F65D21 /* FavsButton.swift */,
+			);
+			path = Favs;
+			sourceTree = "<group>";
+		};
+		FAF4B34A265139CE00F65D21 /* Beer */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD2EDB26430F73009C263E /* BeerView.swift */,
+			);
+			path = Beer;
+			sourceTree = "<group>";
+		};
+		FAF4B34B265139E900F65D21 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B4A10B20264DB4B8006C7224 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FAF4B34C26513A0F00F65D21 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD2EE52643100A009C263E /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		FAF4B34D26513A1700F65D21 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD2EE226430FE7009C263E /* OnboardingView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4AD2EED26431036009C263E /* BeerData.swift in Sources */,
+				FAF4B3472651298B00F65D21 /* FavouriteManager.swift in Sources */,
 				B4AD2EE62643100A009C263E /* MapView.swift in Sources */,
 				B4AD2EF026431070009C263E /* OnboardingViewModel.swift in Sources */,
 				9D3186582649C14D00442D8F /* HeaderUser.swift in Sources */,
@@ -249,14 +312,15 @@
 				B4AD2EEA26431020009C263E /* MapModel.swift in Sources */,
 				B4AD2EE326430FE7009C263E /* OnboardingView.swift in Sources */,
 				B4BAB93A2649CB0800DD4177 /* SearchBarView.swift in Sources */,
+				FA0C0EFF26507D0B003FA30A /* FavsView.swift in Sources */,
 				B4BAB93D2649CD7300DD4177 /* SearchHeaderView.swift in Sources */,
 				B4B1D263264AF3FC00E5EE9B /* BeerSuggestionCellView.swift in Sources */,
-				B4A10B1C264DAFBF006C7224 /* MyBeersView.swift in Sources */,
 				B4B1D260264AF3EB00E5EE9B /* BeerSuggestionView.swift in Sources */,
 				B4A10B1D264DAFBF006C7224 /* MainViewWithTabView.swift in Sources */,
 				B4A10B21264DB4B8006C7224 /* ProfileView.swift in Sources */,
 				9D2B269F2643307F00C2DC14 /* BeerInfoCell.swift in Sources */,
 				B4AD2EF726431091009C263E /* DetailViewModel.swift in Sources */,
+				FAF4B35026519F1D00F65D21 /* FavsButton.swift in Sources */,
 				B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */,
 				CD9812872649C10C003C7EA8 /* HorizontalScrollView.swift in Sources */,
 				B4AD2EFA2643109C009C263E /* MapViewModel.swift in Sources */,

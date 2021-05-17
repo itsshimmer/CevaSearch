@@ -12,11 +12,11 @@ struct MainViewWithTabView: View {
         TabView {
             MainView()
                 .tabItem {
-                    Label("Ceva", systemImage: "link.circle.fill")
+                    Label("Ceva", systemImage: "book.fill")
                 }
-            MyBeersView()
+            FavsView()
                 .tabItem {
-                    Label("My Beers", systemImage: "star.fill")
+                    Label("Favs", systemImage: "heart.fill")
                 }
         }
     }
@@ -24,6 +24,6 @@ struct MainViewWithTabView: View {
 
 struct MainViewWithTabView_Previews: PreviewProvider {
     static var previews: some View {
-        MainViewWithTabView()
+        MainView()
     }
 }
