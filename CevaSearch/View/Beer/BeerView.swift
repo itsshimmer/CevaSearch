@@ -39,8 +39,8 @@ struct BeerView: View {
                                 reader.frame(in: .global).minY + 550 : 540)
                 }
                 .frame(height: 500)
+                // MARK: posicionar direito o FavsButton.
                 FavsButton(beer: beer)
-                // posicionar direito o FavsButton
                 VStack (alignment: .leading, spacing: 15){
                     HStack(alignment: .center) {
                         Rectangle()

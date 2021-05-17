@@ -24,6 +24,6 @@ struct MainViewWithTabView: View {
 
 struct MainViewWithTabView_Previews: PreviewProvider {
     static var previews: some View {
-        FavsView()
+        MainView()
     }
 }
