@@ -46,16 +46,13 @@ struct BeerHeaderInfoFavView: View {
                     
                 }
                 .padding([.bottom, .trailing])
+                .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
                 
             }
         }
         .aspectRatio(contentMode: .fit)
-        
-        
-        
     }
-    
-}
+    }
 
 struct BeerHeaderInfoFavView_Previews: PreviewProvider {
     static var previews: some View {
