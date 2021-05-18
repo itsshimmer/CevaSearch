@@ -29,7 +29,7 @@ struct BeerView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        FavsButton(beer: beer)
+                        FavsButton(beer: beer, isFav: beer.isFavourite)
                             .padding(.horizontal, 30)
                             .padding(.bottom, 40)
                     }
