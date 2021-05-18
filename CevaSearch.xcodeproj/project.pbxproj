@@ -10,6 +10,8 @@
 		9D2B269F2643307F00C2DC14 /* BeerInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B269E2643307F00C2DC14 /* BeerInfoCell.swift */; };
 		9D3186582649C14D00442D8F /* HeaderUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3186572649C14D00442D8F /* HeaderUser.swift */; };
 		9D31865C2649CE0100442D8F /* HeaderUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31865B2649CE0100442D8F /* HeaderUserViewModel.swift */; };
+		9D821D452652E76C00BB02ED /* BeerHeaderInfoFavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D821D442652E76C00BB02ED /* BeerHeaderInfoFavView.swift */; };
+		9DD6CC8C265434B9007181E9 /* FavsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6CC8B265434B9007181E9 /* FavsViewModel.swift */; };
 		B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49625442641C0F800166B49 /* CevaSearchApp.swift */; };
 		B49625492641C0FA00166B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49625482641C0FA00166B49 /* Assets.xcassets */; };
 		B496254C2641C0FA00166B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B496254B2641C0FA00166B49 /* Preview Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		9D2B269E2643307F00C2DC14 /* BeerInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerInfoCell.swift; sourceTree = "<group>"; };
 		9D3186572649C14D00442D8F /* HeaderUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderUser.swift; sourceTree = "<group>"; };
 		9D31865B2649CE0100442D8F /* HeaderUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderUserViewModel.swift; sourceTree = "<group>"; };
+		9D821D442652E76C00BB02ED /* BeerHeaderInfoFavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerHeaderInfoFavView.swift; sourceTree = "<group>"; };
+		9DD6CC8B265434B9007181E9 /* FavsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsViewModel.swift; sourceTree = "<group>"; };
 		B49625412641C0F800166B49 /* CevaSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CevaSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49625442641C0F800166B49 /* CevaSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CevaSearchApp.swift; sourceTree = "<group>"; };
 		B49625482641C0FA00166B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				B4AD2EF626431091009C263E /* DetailViewModel.swift */,
 				B4AD2EF92643109C009C263E /* MapViewModel.swift */,
 				9D31865B2649CE0100442D8F /* HeaderUserViewModel.swift */,
+				9DD6CC8B265434B9007181E9 /* FavsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			children = (
 				FA0C0EFE26507D0B003FA30A /* FavsView.swift */,
 				FAF4B34F26519F1D00F65D21 /* FavsButton.swift */,
+				9D821D442652E76C00BB02ED /* BeerHeaderInfoFavView.swift */,
 			);
 			path = Favs;
 			sourceTree = "<group>";
@@ -318,12 +324,14 @@
 				B4B1D260264AF3EB00E5EE9B /* BeerSuggestionView.swift in Sources */,
 				B4A10B1D264DAFBF006C7224 /* MainViewWithTabView.swift in Sources */,
 				B4A10B21264DB4B8006C7224 /* ProfileView.swift in Sources */,
+				9D821D452652E76C00BB02ED /* BeerHeaderInfoFavView.swift in Sources */,
 				9D2B269F2643307F00C2DC14 /* BeerInfoCell.swift in Sources */,
 				B4AD2EF726431091009C263E /* DetailViewModel.swift in Sources */,
 				FAF4B35026519F1D00F65D21 /* FavsButton.swift in Sources */,
 				B49625452641C0F800166B49 /* CevaSearchApp.swift in Sources */,
 				CD9812872649C10C003C7EA8 /* HorizontalScrollView.swift in Sources */,
 				B4AD2EFA2643109C009C263E /* MapViewModel.swift in Sources */,
+				9DD6CC8C265434B9007181E9 /* FavsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
