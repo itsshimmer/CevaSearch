@@ -61,7 +61,7 @@ struct BeerView: View {
                         Spacer()
                     }
                     HStack{
-                        Text("Color: \(beer.color)            ")
+                        Text("Cor: \(beer.color)            ")
                             .font(.system(size: 15))
                         Spacer(minLength: 2)
                         Text("IBU: \(String(format: "%.2f", beer.ibu))")
@@ -72,7 +72,7 @@ struct BeerView: View {
                         Text("Temperatura: \(beer.temperature)")
                             .font(.system(size: 15))
                         Spacer()
-                        Text("Oring: \(beer.origin)")
+                        Text("Origem: \(beer.origin)")
                             .font(.system(size: 15))
                     }
                     
@@ -98,7 +98,7 @@ struct BeerView: View {
             }
             .padding(.top,30)
             .padding(.horizontal)
-            .background(Color.gray)
+            .background(Color.white)
             .cornerRadius(30)
             .offset(y: -35)
             
@@ -106,7 +106,7 @@ struct BeerView: View {
             
         })
         //.edgesIgnoringSafeArea(.top)
-        .background(Color.gray.edgesIgnoringSafeArea(.all))
+        .background(Color.white.edgesIgnoringSafeArea(.all))
         
     }
 }
