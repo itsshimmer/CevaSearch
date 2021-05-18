@@ -38,11 +38,10 @@ struct FavsButton: View {
             }, label: {
                 Image(systemName: isFav ? "heart.fill" : "heart")
                     .padding(12.0)
-                    
                     .aspectRatio(contentMode: .fit)
                     .font(.title2)
                     .foregroundColor(isFav ? Color.init(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)) : .white)
-                    
+                
             })
         }
         .background(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
