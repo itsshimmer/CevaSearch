@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct FavsView: View {
+    
     var body: some View {
-        Text("Favs")
+        VStack {
+            Text("Favs")
+                .font(.title2)
+                .fontWeight(.bold)
+           // SearchBarView()
+            //     .padding()
+            List {
+                BeerHeaderInfoFavView(beer: beers[1])
+                BeerHeaderInfoFavView(beer: beers[2])
+                BeerHeaderInfoFavView(beer: beers[3])
+                BeerHeaderInfoFavView(beer: beers[4])
+            }
+            
+        }
+        .padding(.trailing)
+        
     }
 }
 
