@@ -31,10 +31,10 @@ struct FavsButton: View {
                 print(isFav)
                 print(UserDefaults.standard.object(forKey: "Favourites") as? [Int] ?? [])
                 DispatchQueue.main.asyncAfter(deadline: .now() +
-                                                self.animationDuration,execute: {
-                                                    self.animate = false
-                                                    self.isFav.toggle()
-                                                })
+                   self.animationDuration,execute: {
+                   self.animate = false
+                   self.isFav.toggle()
+                })
             }, label: {
                 Image(systemName: isFav ? "heart.fill" : "heart")
                     .padding(12.0)
@@ -43,6 +43,8 @@ struct FavsButton: View {
                     .foregroundColor(isFav ? Color.init(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)) : .white)
                 
             })
+            .scaleEffect(animate ? animationScale : 1)
+            .animation(.easeIn(duration: animationDuration))
         }
         .background(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
         .clipShape(Circle())

@@ -98,7 +98,7 @@ struct BeerView: View {
             }
             .padding(.top,30)
             .padding(.horizontal)
-            .background(Color.gray)
+            .background(Color.white)
             .cornerRadius(30)
             .offset(y: -35)
             
@@ -106,7 +106,7 @@ struct BeerView: View {
             
         })
         //.edgesIgnoringSafeArea(.top)
-        .background(Color.gray.edgesIgnoringSafeArea(.all))
+        .background(Color.white.edgesIgnoringSafeArea(.all))
         
     }
 }
