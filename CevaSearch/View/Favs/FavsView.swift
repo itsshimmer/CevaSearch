@@ -32,7 +32,6 @@ func listAllFavs() -> [Beer] {
             }
         }
     }
-
     return allFavs
 }
 

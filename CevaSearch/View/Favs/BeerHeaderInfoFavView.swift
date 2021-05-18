@@ -52,7 +52,7 @@ struct BeerHeaderInfoFavView: View {
         }
         .aspectRatio(contentMode: .fit)
     }
-    }
+}
 
 struct BeerHeaderInfoFavView_Previews: PreviewProvider {
     static var previews: some View {
