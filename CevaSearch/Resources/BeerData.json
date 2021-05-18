@@ -10,7 +10,7 @@
         "food": "Macarrão ao molho pesto, comidas típicas baianas, queijo gorgonzola.",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Lata 473 ml, Growler 1L",
-        "imageName": "dharmaJuicyIPA"
+        "imageName": "Dharma Juicy IPA"
     },
     {
         "id": 1002,
@@ -23,7 +23,7 @@
         "food": "Massa molho Bechamel, Salame.",
         "origin": "Bélgica 🇧🇪",
         "disponibility": "Garrafa 750 ml",
-        "imageName": "tripelkarmeliet"
+        "imageName": "Tripel Karmeliet"
     },
     {
         "id": 1003,
@@ -36,7 +36,7 @@
         "food": "Vai bem com carnes de caça, queijos duros bem maturados, presunto cru e sobremesas caramelizadas, como crème brûlée e pudim de leite.",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Garrafa 600 ml",
-        "imageName": "ColoradoIthaca"
+        "imageName": "Colorado Ithaca"
     },
     {
         "id": 1004,
@@ -49,7 +49,7 @@
         "food": "",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Garrafa 355 ml",
-        "imageName": ""
+        "imageName": "Ampolis Aveludadis"
     },
     {
         "id": 1005,
@@ -62,11 +62,11 @@
         "food": "Alimentos como pastéis, aperitivos não gordurosos como queijo, azeitona e mandioca são boas pedidas",
         "origin": "Holanda 🇳🇱",
         "disponibility": "Lata 350ml e Garrafa 330 ml",
-        "imageName": "heineken"
+        "imageName": "Heineken"
     },
     {
         "id": 1006,
-        "name": "Coruja",
+        "name": "Coruja Lager",
         "type": "American Larger",
         "ibu": 25,
         "color": "Cobre/Ambar",
@@ -75,11 +75,11 @@
         "food": "Carne de porco, Hambúrguer, filé grelhado simples, pratos tailandeses e indianos, amenizado a pimenta.",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Garrafa 500ml",
-        "imageName": "Coruja"
+        "imageName": "Coruja Lager"
     },
     {
         "id": 1007,
-        "name": "Dado Bier",
+        "name": "Dado Bier Lager",
         "type": "Lager",
         "ibu": 9.5,
         "color": "Amarela",
@@ -88,12 +88,12 @@
         "food": "Carnes vermelhas, queijos e hamburguer.",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Lata 350ml",
-        "imageName": ""
+        "imageName": "Dado Bier Lager"
         
     },
     {
         "id": 1008,
-        "name": "GUINNESS® DRAUGHT",
+        "name": "Guinness Draught",
         "type": "Stout",
         "ibu": 45,
         "color": "Preta",
@@ -102,12 +102,12 @@
         "food": "Ostras, tábua de frios, queijo gorgonzola",
         "origin": "Irlanda 🇮🇪",
         "disponibility": "Lata 355 ml",
-        "imageName": "Guinness"
+        "imageName": "Guinness Draught"
         
     },
     {
         "id": 1009,
-        "name": "Red Stripe",
+        "name": "Red Stripe Lager",
         "type": "Standard American Lager",
         "ibu": 23,
         "color": "Amarelo",
@@ -116,7 +116,7 @@
         "food": "Saladas, Frutos do Mar",
         "origin": "Jamaica 🇯🇲",
         "disponibility": "Garrafa 330 ml",
-        "imageName": "RedStripe"
+        "imageName": "Red Stripe Lager"
     },
     {
         "id": 1010,
@@ -129,7 +129,7 @@
         "food": "Pizza Calabresa, Queijos, Saladas",
         "origin": "Republica Tcheca 🇨🇿",
         "disponibility": "Garrafa 500 ml",
-        "imageName": "pilsenerUrquel"
+        "imageName": "Pilsner Urquell"
     },
     {
         "id": 1011,
@@ -142,7 +142,7 @@
         "food": "Aves, Peixes, Saladas",
         "origin": "Alemanha 🇩🇪",
         "disponibility": "Garrafa 500 ml, Garrafa 330 ml",
-        "imageName": "PaulanerHefeWeissbierNaturtrub"
+        "imageName": "Paulaner Weissbier"
     },
     {
         "id": 1012,
@@ -155,7 +155,7 @@
         "food": "Peixes suaves, sushi, furtos do mar, queijo brie, camembert e quieijos de cabra.",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Garrafa 600 ml, Lata 350 ml",
-        "imageName": "BadenBadenWitbier"
+        "imageName": "Baden Baden Witbier"
     },
     {
         "id": 1013,
@@ -168,6 +168,84 @@
         "food": "Frutos do mar, sopas e saladas",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Garrafa 500 ml",
-        "imageName": "AlCaponePremiumLager"
+        "imageName": "AlCapone Premium Lager"
+    },
+    {
+        "id": 7001,
+        "name": "Imigração Hop Farmhouse Ale Garrafa",
+        "type": "Bière de Garde (Pale Ale)",
+        "ibu": 50,
+        "color": "Amarelo Dourado",
+        "abv": 6.8,
+        "temperature": "5º",
+        "food": "Massas, cordeiro assado, queijo Camembert",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Lata 375 ml",
+        "imageName": "Imigração Hop Farmhouse Ale"
+    },
+    {
+        "id": 7002,
+        "name": "Colorado Ribeirão Lager",
+        "type": "Lager",
+        "ibu": 20,
+        "color": "Amarelo claro",
+        "abv": 4.5,
+        "temperature": "0º a 4º",
+        "food": "Alimentos leves e frescos como peixes grelhados e saladas.",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Garrafas 600 ml e 355 ml, latinhas 410 ml e 350 ml",
+        "imageName": "Colorado Ribeirao Lager"
+    },
+    {
+        "id": 7003,
+        "name": "Colorado Morena Tropicana",
+        "type": "Lager, Fruit Beer",
+        "ibu": 10,
+        "color": "Amarelo Dourado",
+        "abv": 4.3,
+        "temperature": "4º a 8º",
+        "food": "Saladas e frutas (uva).",
+        "origin": "Brasil 🇧🇷",
+        "disponibility": "Garrafa 600 ml",
+        "imageName": "Colorado Morena Tropicana"
+    },
+    {
+        "id": 7004,
+        "name": "Erdinger Weissbier",
+        "type": "German Weizen",
+        "ibu": 13,
+        "color": "Amarelo Dourado",
+        "abv": 5.3,
+        "temperature": "4º a 6º",
+        "food": "Saladas, frutos do mar.",
+        "origin": "Alemanha 🇩🇪",
+        "disponibility": "Garrafa 500 ml",
+        "imageName": "Erdinger Weissbeer"
+    },
+    {
+        "id": 7005,
+        "name": "Blue Moon Belgian White",
+        "type": "Belgian-Style Wheat Ale",
+        "ibu": 9,
+        "color": "Amarelo Dourado",
+        "abv": 5.4,
+        "temperature": "4º a 8º",
+        "food": "Frutos do mar como camarão grelhado, pratos asiáticos como pad thai e pratos com frango marinado.",
+        "origin": "Estados Unidos 🇺🇸",
+        "disponibility": "Garrafa 355 ml, Lata 355 ml",
+        "imageName": "Blue Moon Belgian White"
+    },
+    {
+        "id": 7006,
+        "name": "Vedett Extra White",
+        "type": "Pale barley malt & wheat malt",
+        "ibu": 4,
+        "color": "Amarelo Dourado",
+        "abv": 4.7,
+        "temperature": "3º",
+        "food": "Comida japonesa, tailandesa e saladas.",
+        "origin": "Bélgica 🇧🇪",
+        "disponibility": "Garrafa 330 ml",
+        "imageName": "Vedett Extra White"
     }
 ]
