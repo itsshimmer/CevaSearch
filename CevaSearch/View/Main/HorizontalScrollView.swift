@@ -51,7 +51,7 @@ struct HorizontalScrollView: View {
                                             VStack {
                                                 HStack {
                                                     Spacer()
-                                                    FavsButton(beer: beer)
+                                                    FavsButton(beer: beer, isFav: beer.isFavourite)
                                                         .padding()
                                                 }
                                                 Spacer()
