@@ -83,7 +83,7 @@ struct TabBarView_Previews: PreviewProvider {
                                                     .padding(.bottom, 50), icon: "compass", tag: "brunin god", color: Color(UIColor.systemGray4)),
                                      TabBarPage(page: MainView()
                                                     .padding(.bottom, 50), icon: "BeerIcon", tag: "Ceva", color: Color(UIColor.systemGray4)),
-                                     TabBarPage(page: FavsView(), icon: "heart", tag: "Favs", color: Color(UIColor.systemGray4))]))
+                                     TabBarPage(page: FavsView(), icon: "HeartIcon", tag: "Favs", color: Color(UIColor.systemGray4))]))
     }
 }
 
