@@ -10,6 +10,7 @@ import SwiftUI
 struct HorizontalScrollView: View {
     
     @State var render:Bool = false
+//    @State var isFav: Bool =
     
     private func getScale(proxy: GeometryProxy) -> CGFloat{
         let viewFrame = proxy.frame(in: CoordinateSpace.global)
@@ -53,6 +54,9 @@ struct HorizontalScrollView: View {
                                                     Spacer()
                                                     FavsButton(beer: beer, isFav: beer.isFavourite)
                                                         .padding()
+                                                        .onAppear() {
+                                                            
+                                                        }
                                                 }
                                                 Spacer()
                                             }
