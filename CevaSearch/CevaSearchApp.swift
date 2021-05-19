@@ -17,7 +17,12 @@ struct CevaSearchApp: App {
             if(newUser) {
                 OnboardingView(newUser: $newUser)
             } else {
-                MainViewWithTabView()
+                //MainViewWithTabView()
+                TabBarView(pages: .constant([TabBarPage(page: MainView()
+                                                            .padding(.bottom, 50), icon: "compass", tag: "brunin god", color: Color(UIColor.systemGray4)),
+                                             TabBarPage(page: MainView()
+                                                                                         .padding(.bottom, 50), icon: "BeerIcon", tag: "Ceva", color: Color(UIColor.systemGray4)),
+                                             TabBarPage(page: FavsView(), icon: "heart", tag: "Favs", color: Color(UIColor.systemGray4))]))
             }
         }
     }

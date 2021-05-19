@@ -14,8 +14,11 @@ struct MainView: View {
         NavigationView() {
             VStack(alignment: .leading) {
                 HeaderUser(userName: "Brentano")
+                    .padding(.horizontal)
                 SearchHeaderView()
+                    .padding(.horizontal)
                 HorizontalScrollView()
+                    .padding(.horizontal)
                 BeerSuggestionView(beerList: beers)
                     .padding(.bottom)
                 Spacer()
