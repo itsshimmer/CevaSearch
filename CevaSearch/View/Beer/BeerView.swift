@@ -87,13 +87,13 @@ struct BeerView: View {
                         Text("Harmonização:")
                         Text(beer.food)
                             .font(.system(size: 15))
-                            .padding(.bottom, 30.0)
+                            .padding(.bottom, 200.0)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                     .frame( alignment: .leading)
                     
                 }
-                .padding(.bottom, 30.0)
+                .padding(.bottom, 40.0)
                 
             }
             .padding(.top,30)
