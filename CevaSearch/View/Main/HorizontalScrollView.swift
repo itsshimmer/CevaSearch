@@ -14,7 +14,7 @@ struct HorizontalScrollView: View {
     
     private func getScale(proxy: GeometryProxy) -> CGFloat{
         let viewFrame = proxy.frame(in: CoordinateSpace.global)
-        let midPoint: CGFloat = 215
+        let midPoint: CGFloat = 175
         var scale: CGFloat = 1.0
         let deltaXAnimationThreshold: CGFloat = 125
         
@@ -29,7 +29,7 @@ struct HorizontalScrollView: View {
         VStack {
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 10) {
+                    HStack(spacing: 70) {
                         ForEach(beers.shuffled()) { beer in
                             ZStack {
                                 GeometryReader { proxy in
@@ -40,13 +40,13 @@ struct HorizontalScrollView: View {
                                             beer.image
                                                 .resizable()
                                                 .scaledToFill()
-                                                .frame(width: 160)
+                                                .frame(width: 225)
                                                 .clipped()
                                                 .cornerRadius(8)
-                                                .overlay(
-                                                    RoundedRectangle(cornerRadius: 8)
-                                                        .stroke(Color(white: 0.4))
-                                                )
+//                                                .overlay(
+//                                                    RoundedRectangle(cornerRadius: 8)
+//                                                        .stroke(Color(white: 0.4))
+//                                                )
                                                 .shadow(radius: 3)
                                             }
                                             VStack {

@@ -19,6 +19,7 @@ struct BeerSuggestionView: View {
                         .padding(.horizontal, 4)
                 }
             }
+            .padding(.bottom, 5)
         }
     }
 }

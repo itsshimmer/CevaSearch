@@ -19,22 +19,24 @@ struct HeaderUser: View {
         HStack {
             VStack(alignment: .leading) {
                 HStack {
-                    Text("Hi, \(userName)")
+                    Text("Olá, \(userName)")
                         .font(.title2)
                         .fontWeight(.bold)
                         .multilineTextAlignment(    .leading)
+                        .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
                     Spacer()
                     
                 }
                 Text("\(month) \(day)th, \(year)")
                     .font(.subheadline)
+                    .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
             }
             .padding([.top, .leading, .trailing])
             Button(action: {}) {
                 HStack {
                     Image(systemName: "person.fill")
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
                 }
                 .padding()
                 .background(Color.gray)
