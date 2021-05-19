@@ -10,7 +10,7 @@ import SwiftUI
 struct HorizontalScrollView: View {
     
     @State var render:Bool = false
-//    @State var isFav: Bool =
+    @State var someBeers = someBeersToShow()
     
     private func getScale(proxy: GeometryProxy) -> CGFloat{
         let viewFrame = proxy.frame(in: CoordinateSpace.global)
@@ -30,7 +30,7 @@ struct HorizontalScrollView: View {
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 70) {
-                        ForEach(beers.shuffled()) { beer in
+                        ForEach(someBeers) { beer in
                             ZStack {
                                 GeometryReader { proxy in
                                     let scale = getScale(proxy: proxy)
@@ -85,8 +85,34 @@ struct HorizontalScrollView: View {
     }
 }
 
+func someBeersToShow() -> [Beer] {
+    var notFavs: [Beer] = []
+
+    for beer in beers {
+        if beer.isFavourite == false {
+            notFavs.append(beer)
+        }
+    }
+
+    let shuffled = notFavs.shuffled()
+    var someBeers: [Beer] = []
+    var limitBeersArray: Int
+
+    // Número de cervejas na vitrine
+    if shuffled.count >= 7 {
+        limitBeersArray = 7
+    } else {
+        limitBeersArray = shuffled.count
+    }
+    for i in 0...limitBeersArray - 1 {
+        someBeers.append(shuffled[i])
+    }
+
+    return someBeers
+}
+
 struct ScrollViewHorizontal_Previews: PreviewProvider {
     static var previews: some View {
-        HorizontalScrollView()
+        HorizontalScrollView(someBeers: someBeersToShow())
     }
 }
