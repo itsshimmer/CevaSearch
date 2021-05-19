@@ -22,9 +22,9 @@ struct BeerView: View {
                         //Add parallax effect...
                         .frame(width: UIScreen.main.bounds.width, height:
                                 reader.frame(in: .global).minY > 0 ?
-                                reader.frame(in: .global).minY + 550 : 540)
+                                reader.frame(in: .global).minY + 480 : 480)
                 }
-                .frame(height: 500)
+                .frame(height: 480)
                 VStack {
                     Spacer()
                     HStack {
@@ -87,13 +87,13 @@ struct BeerView: View {
                         Text("Harmonização:")
                         Text(beer.food)
                             .font(.system(size: 15))
-                            .padding(.bottom, 30.0)
+                            .padding(.bottom, 200.0)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                     .frame( alignment: .leading)
                     
                 }
-                .padding(.bottom, 30.0)
+                .padding(.bottom, 40.0)
                 
             }
             .padding(.top,30)
