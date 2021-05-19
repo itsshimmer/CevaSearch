@@ -18,7 +18,7 @@ struct BeerHeaderInfoFavView: View {
                 beer.image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .scaledToFit()
+                    .scaledToFill()
                     .frame(width: 125, height: 125)
                     .clipped()
                     .cornerRadius(8)
@@ -33,13 +33,13 @@ struct BeerHeaderInfoFavView: View {
                         .font(.title3)
                         .fontWeight(.bold)
                         .padding(.trailing)
-                        .aspectRatio(contentMode: .fill)
+                        .aspectRatio(contentMode: .fit)
                     Text("\(beer.type)")
                         .fontWeight(.semibold)
                         .padding([.top, .trailing])
                             .aspectRatio(contentMode: .fit)
                     Divider()
-                    Text("\(beer.origin) - IBU \(String(format: "%.1f", beer.ibu))")
+                    Text("\(beer.origin)")
                         .fontWeight(.semibold)
                         .padding(.trailing)
                         .aspectRatio(contentMode: .fill)
@@ -56,6 +56,6 @@ struct BeerHeaderInfoFavView: View {
 
 struct BeerHeaderInfoFavView_Previews: PreviewProvider {
     static var previews: some View {
-        BeerHeaderInfoFavView(beer: beers[1])
+        BeerHeaderInfoFavView(beer: beers[13])
     }
 }
