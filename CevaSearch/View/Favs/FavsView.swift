@@ -8,25 +8,31 @@
 import SwiftUI
 
 struct FavsView: View {
-    
+
+    @State var allFavs = listAllFavs()
+
     var body: some View {
-        VStack {
-            Text("Favs")
-                .font(.title2)
-                .fontWeight(.bold)
-           // SearchBarView()
-            //     .padding()
-            List {
-                BeerHeaderInfoFavView(beer: beers[1])
-                BeerHeaderInfoFavView(beer: beers[2])
-                BeerHeaderInfoFavView(beer: beers[3])
-                BeerHeaderInfoFavView(beer: beers[4])
-            }
-            
+        List(allFavs) { fav in
+            BeerHeaderInfoFavView(beer: fav)
         }
-        .padding(.trailing)
-        
+        .onAppear() {
+            allFavs = listAllFavs()
+        }
     }
+}
+
+func listAllFavs() -> [Beer] {
+    let favsIds = FavouriteManager.favourites
+    var allFavs: [Beer] = []
+
+    for beer in beers {
+        for fav in favsIds {
+            if beer.id == fav {
+                allFavs.append(beer)
+            }
+        }
+    }
+    return allFavs
 }
 
 struct FavsView_Previews: PreviewProvider {
@@ -34,3 +40,5 @@ struct FavsView_Previews: PreviewProvider {
         FavsView()
     }
 }
+
+
