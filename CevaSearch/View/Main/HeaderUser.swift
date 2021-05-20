@@ -25,24 +25,30 @@ struct HeaderUser: View {
                         .multilineTextAlignment(    .leading)
                         .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
                     Spacer()
-                    
                 }
-                Text("\(month) \(day)th, \(year)")
+                Text("\(day) de Maio, \(year)")
                     .font(.subheadline)
                     .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
             }
             .padding([.top, .leading, .trailing])
             Button(action: {}) {
                 HStack {
-                    Image(systemName: "person.fill")
-                        .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
+                    Image("user")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .aspectRatio(contentMode: .fill)
+        //                .foregroundColor(Color.black)
+        //                .padding()
+        //                .background(Color.gray)
+                        .mask(Circle())
+//                    Image(systemName: "person.fill")
+//                        .aspectRatio(contentMode: .fit)
+//                        .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
                 }
                 .padding()
-                .background(Color.gray)
-                .mask(Circle())
+//                .background(Color.gray)
+//                .mask(Circle())
             }
-            .padding()
             .padding(.top)
         }
     }
