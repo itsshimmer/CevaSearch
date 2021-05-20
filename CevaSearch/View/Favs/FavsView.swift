@@ -13,40 +13,52 @@ struct FavsView: View {
     @State var searchText = ""
     
     var body: some View {
-        
-        
-        VStack {
-            TextField("Procure por uma cerveja pelo nome, IBU, tipo, cor...",text: $searchText)
-                .padding(.leading,40)
-                .frame(width: 350, height: 50, alignment: .center)
-                .background(Color(red: 0, green: 0, blue: 0, opacity: 0.2))
-                .cornerRadius(8)
-                .overlay (
-                    HStack{
-                        Image(systemName:"magnifyingglass")
-                            .foregroundColor(Color.black)
-                        Spacer()
+        NavigationView() {
+            VStack {
+                TextField("Procure por uma cerveja pelo nome, IBU, tipo, cor...",text: $searchText)
+                    .padding(.leading,40)
+                    .frame(width: 350, height: 50, alignment: .center)
+                    .background(Color.init(#colorLiteral(red: 0.9492809176, green: 0.9488533139, blue: 0.968627451, alpha: 1)))
+                    .cornerRadius(8)
+                    .overlay (
+                        HStack{
+                            Image(systemName:"magnifyingglass")
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
+                            Spacer()
+                        }
+                        .padding(.horizontal,10)
+                    )
+                
+//                List(getFilter(list: listAllFavs())) { fav in
+//                    NavigationLink(destination: BeerView(beer: fav)) {
+//                        BeerHeaderInfoFavView(beer: fav)
+//                    }
+//                }
+                ScrollView {
+                    ForEach(getFilter(list: listAllFavs())) { fav in
+                        HStack {
+                            NavigationLink(destination: BeerView(beer: fav)) {
+                                BeerHeaderInfoFavView(beer: fav)
+                            }
+                            .ignoresSafeArea()
+                            Spacer()
+                        }
                     }
-                    .padding(.horizontal,10)
-                )
-            
-            List(getFilter(list: listAllFavs())) { fav in
-                BeerHeaderInfoFavView(beer: fav)
-            }
-            .onAppear() {
-                allFavs = listAllFavs()
+                }
+                .onAppear() {
+                    allFavs = listAllFavs()
+                }
+                .navigationBarHidden(true)
+                
             }
         }
     }
     
     func getFilter(list: [Beer]) -> [Beer]{
-        
-        
         if searchText != "" {
             return beers.filter {
                 $0.name.uppercased().contains(searchText.uppercased())
             }
-            
         }
         return allFavs
     }
@@ -58,8 +70,6 @@ func listAllFavs() -> [Beer] {
     
     for beer in beers {
         for fav in favsIds {
-            
-            
             if beer.id == fav {
                 allFavs.append(beer)
             }
@@ -73,5 +83,3 @@ struct FavsView_Previews: PreviewProvider {
         FavsView()
     }
 }
-
-
