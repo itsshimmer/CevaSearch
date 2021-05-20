@@ -9,7 +9,18 @@ import SwiftUI
 
 struct BeerView: View {
     //    MARK: as imagens devem ter o mesmo tamanho a 480 ou um pouco mais, imagens muito grandes ficam complicadas de lidar e causam bugs
+    
+//    func stringN(beerSize: String) -> String{
+//        let first: String =  beerSize
+//        let endFirtsLine = first.characters.firstIndexOf(",")!
+//        let newSize = first.replacingCharacters(in: endFirtsLine, with: "\n")
+//
+//    }
+    
     var beer: Beer
+    
+    
+    
     var body: some View {
         
         ScrollView(.vertical, showsIndicators: false , content: {
@@ -48,52 +59,117 @@ struct BeerView: View {
                 HStack {
                     Text(beer.name)
                         .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
                     Spacer()
                 }
+                //Spacer(minLength: -30)
+                
+                HStack{
+                    VStack(alignment:.leading){
+                        
+                        HStack {
+                            Text("Size:")
+                                .font(.system(size: 15))
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+                            Text("\(beer.disponibility)")
+                                .font(.system(size: 15))
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+                                .multilineTextAlignment(.leading)                            
+                        }
+
+                        Spacer(minLength: 3)
+                        
+                        HStack {
+                            Text("ABV:")
+                                .font(.system(size: 15))
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+                            Text("\(String(format: "%.2f", beer.abv))")
+                                .font(.system(size: 15))
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+                        }
+                        Spacer(minLength: 3)
+                        
+                        HStack {
+                            Text("Cor:")
+                                .font(.system(size: 15))
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+                            Text("\(beer.color)")
+                                .font(.system(size: 15))
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+                        }
+                        Spacer(minLength: 3)
+                        HStack {
+                            Text("IBU:")
+                                .font(.system(size: 15))
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+
+                            Text("\(String(format: "%.2f", beer.ibu))")
+                                .font(.system(size: 15))
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+                        }
+                    }
+                    Spacer()
+                    VStack(alignment:.leading){
+                        
+                        HStack {
+                            Text("Temperatura:")
+                                .font(.system(size: 15))
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+
+                            Text("\(beer.temperature)")
+                                .font(.system(size: 15))
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+                        }
+                        Spacer(minLength: 3)
+                        
+                        HStack {
+                            Text("Origem:")
+                                .font(.system(size: 15))
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+
+                            Text("\(beer.origin)")
+                                .font(.system(size: 15))
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+                        }
+                        Spacer(minLength: 3)
+                        
+                        HStack {
+                            Text("Tipo:")
+                                .font(.system(size: 15))
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+
+                            Text("\(beer.type)")
+                                .font(.system(size: 15))
+                                .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+                        }
+                    }
+                    .padding(.bottom, 20.0)
+                }
+                //.padding(.bottom, 40.0)
                 VStack(alignment: .leading) {
-                    
-                    HStack{
-                        Text("Size: \(beer.disponibility)")
-                            .font(.system(size: 15))
-                        Spacer(minLength: 2)
-                        Text("ABV: \(String(format: "%.2f", beer.abv))")
-                            .font(.system(size: 15))
-                        Spacer()
-                    }
-                    HStack{
-                        Text("Cor: \(beer.color)            ")
-                            .font(.system(size: 15))
-                        Spacer(minLength: 2)
-                        Text("IBU: \(String(format: "%.2f", beer.ibu))")
-                            .font(.system(size: 15))
-                        Spacer()
-                    }
-                    HStack{
-                        Text("Temperatura: \(beer.temperature)")
-                            .font(.system(size: 15))
-                        Spacer()
-                        Text("Origem: \(beer.origin)")
-                            .font(.system(size: 15))
-                    }
-                    
-                    HStack{
-                        Text("Tipo: \(beer.type)")
-                            .font(.system(size: 15))
-                        Spacer()
-                    }
                     Divider()
                         .background(Color.black)
                     VStack(alignment: .leading){
                         Text("Harmonização:")
+                            .font(.system(size: 20))
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
                         Text(beer.food)
                             .font(.system(size: 15))
                             .padding(.bottom, 200.0)
                             .fixedSize(horizontal: false, vertical: true)
+                            .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
                     }
                     .frame( alignment: .leading)
-                    
                 }
-                .padding(.bottom, 40.0)
                 
             }
             .padding(.top,30)
@@ -101,9 +177,6 @@ struct BeerView: View {
             .background(Color.white)
             .cornerRadius(30)
             .offset(y: -35)
-            
-            
-            
         })
         //.edgesIgnoringSafeArea(.top)
         .background(Color.white.edgesIgnoringSafeArea(.all))
