@@ -1,45 +1,33 @@
 //
-//  BeerHeaderInfoFavView.swift
+//  BeerHeaderInfoSearchView.swift
 //  CevaSearch
 //
-//  Created by Rodrigo Kroef Tarouco on 17/05/21.
+//  Created by João Brentano on 20/05/21.
 //
 
 import SwiftUI
 import Foundation
 
-struct BeerHeaderInfoFavView: View {
+struct BeerHeaderInfoSearchView: View {
     
     var beer: Beer
     
     var body: some View {
         VStack {
             HStack {
-                ZStack {
-                    beer.image
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .scaledToFill()
-                        .frame(width: 125, height: 125)
-                        .clipped()
-                        .cornerRadius(8)
-    //                    .overlay(
-    //                        RoundedRectangle(cornerRadius: 8)
-    //                            .stroke(Color(white: 0.4))
-    //                    )
-                        .shadow(radius: 3)
-                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    HStack {
-                        Spacer()
-                        VStack {
-                            FavsAlertButton(beer: beer, isFav: beer.isFavourite)
-                                .padding(5)
-                            Spacer()
-                        }
-                    }
-                    
+                beer.image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .scaledToFill()
                     .frame(width: 125, height: 125)
-                }
+                    .clipped()
+                    .cornerRadius(8)
+//                    .overlay(
+//                        RoundedRectangle(cornerRadius: 8)
+//                            .stroke(Color(white: 0.4))
+//                    )
+                    .shadow(radius: 3)
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 VStack(alignment: .leading) {
                     Text("\(beer.name)")
                         .font(.title3)
@@ -66,8 +54,8 @@ struct BeerHeaderInfoFavView: View {
     }
 }
 
-struct BeerHeaderInfoFavView_Previews: PreviewProvider {
+struct BeerHeaderInfoSearchView_Previews: PreviewProvider {
     static var previews: some View {
-        BeerHeaderInfoFavView(beer: beers[13])
+        BeerHeaderInfoSearchView(beer: beers[13])
     }
 }
