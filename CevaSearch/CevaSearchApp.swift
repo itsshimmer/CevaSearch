@@ -19,8 +19,6 @@ struct CevaSearchApp: App {
             } else {
                 //MainViewWithTabView()
                 TabBarView(pages: .constant([TabBarPage(page: MainView()
-                                                            .padding(.bottom, 50), icon: "compass", tag: "brunin god", color: Color(UIColor.systemGray4)),
-                                             TabBarPage(page: MainView()
                                                                                          .padding(.bottom, 50), icon: "BeerIcon", tag: "Ceva", color: Color(UIColor.systemGray4)),
                                              TabBarPage(page: FavsView(), icon: "HeartIcon", tag: "Favs", color: Color(UIColor.systemGray4))]))
             }
