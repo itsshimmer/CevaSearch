@@ -22,10 +22,10 @@ struct BeerHeaderInfoFavView: View {
                     .frame(width: 125, height: 125)
                     .clipped()
                     .cornerRadius(8)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke(Color(white: 0.4))
-                    )
+//                    .overlay(
+//                        RoundedRectangle(cornerRadius: 8)
+//                            .stroke(Color(white: 0.4))
+//                    )
                     .shadow(radius: 3)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 VStack(alignment: .leading) {

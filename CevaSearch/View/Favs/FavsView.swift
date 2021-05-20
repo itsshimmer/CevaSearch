@@ -15,6 +15,12 @@ struct FavsView: View {
     var body: some View {
         NavigationView() {
             VStack {
+                Text("Favs")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .bold()
+                    .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
+                    .padding()
+                    .padding(.bottom, 5)
                 TextField("Procure por uma cerveja pelo nome, IBU, tipo, cor...",text: $searchText)
                     .padding(.leading,40)
                     .frame(width: 350, height: 50, alignment: .center)
@@ -28,6 +34,7 @@ struct FavsView: View {
                         }
                         .padding(.horizontal,10)
                     )
+                    .padding(.top, 10)
                 
 //                List(getFilter(list: listAllFavs())) { fav in
 //                    NavigationLink(destination: BeerView(beer: fav)) {
@@ -39,6 +46,7 @@ struct FavsView: View {
                         HStack {
                             NavigationLink(destination: BeerView(beer: fav)) {
                                 BeerHeaderInfoFavView(beer: fav)
+                                    .padding(.leading, 10)
                             }
                             .ignoresSafeArea()
                             Spacer()
@@ -48,6 +56,7 @@ struct FavsView: View {
                 .onAppear() {
                     allFavs = listAllFavs()
                 }
+                .navigationTitle("Favs")
                 .navigationBarHidden(true)
                 
             }

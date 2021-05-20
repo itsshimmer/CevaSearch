@@ -16,6 +16,12 @@ struct SearchView: View {
         NavigationView() {
             ZStack {
                 VStack {
+                    Text("Search")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .bold()
+                        .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
+                        .padding()
+                        .padding(.bottom, 5)
                     TextField("Procure por uma cerveja pelo nome, IBU, tipo, cor...",text: $searchText)
                         .padding(.leading,40)
                         .frame(width: 350, height: 50, alignment: .center)
@@ -29,6 +35,7 @@ struct SearchView: View {
                             }
                             .padding(.horizontal,10)
                         )
+                        .padding(.top, 10)
                     //                        List(getFilter(list: beers)) { fav in
                     //                            NavigationLink(destination: BeerView(beer: fav)) {
                     //                                BeerHeaderInfoFavView(beer: fav)
@@ -40,12 +47,14 @@ struct SearchView: View {
                             HStack {
                                 NavigationLink(destination: BeerView(beer: beer)) {
                                     BeerHeaderInfoFavView(beer: beer)
+                                        .padding(.leading, 10)
                                 }
                                 .ignoresSafeArea()
                                 Spacer()
                             }
                         }
                     }
+                    .navigationBarTitle("Search")
                     .navigationBarHidden(true)
                     .onAppear() {
                         allFavs = beers
