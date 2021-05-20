@@ -23,13 +23,13 @@ struct FavsButton: View {
     var body: some View {
         ZStack{
             Button(action: {
-                print(beer.isFavourite)
+//                print(beer.isFavourite)
                 isFav = beer.isFavourite
                 beer.isFavourite = !beer.isFavourite
                 self.animate = true
                 //self.isFav.toggle()
-                print(isFav)
-                print(UserDefaults.standard.object(forKey: "Favourites") as? [Int] ?? [])
+//                print(isFav)
+//                print(UserDefaults.standard.object(forKey: "Favourites") as? [Int] ?? [])
                 DispatchQueue.main.asyncAfter(deadline: .now() +
                    self.animationDuration,execute: {
                    self.animate = false

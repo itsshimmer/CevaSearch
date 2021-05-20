@@ -15,6 +15,7 @@ struct SearchHeaderView: View {
                     .bold()
                     .font(.title2)
                     .padding(.leading)
+                    .foregroundColor(Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)))
                 Spacer()
             }
             SearchBarView()

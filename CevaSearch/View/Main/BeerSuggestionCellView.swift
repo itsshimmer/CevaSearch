@@ -14,14 +14,16 @@ struct BeerSuggestionCellView: View {
     var body: some View {
         NavigationLink(destination: BeerView(beer: beer)) {
             beer.image
+                
                 .resizable()
-                .frame(width: 35, height: 75)
+                .frame(width: 90, height: 100)
+                
                 .aspectRatio(contentMode: .fill)
-                .foregroundColor(Color.black)
-                .padding()
-                .background(Color.gray)
+//                .foregroundColor(Color.black)
+//                .padding()
+//                .background(Color.gray)
                 .mask(Circle())
-                .shadow(radius: 5, x: 1, y: 5)
+                .shadow(radius: 3, x: 1, y: 4)
         }
     }
 }

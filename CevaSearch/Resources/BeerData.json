@@ -62,7 +62,7 @@
         "food": "Alimentos como pastéis, aperitivos não gordurosos como queijo, azeitona e mandioca são boas pedidas",
         "origin": "Holanda 🇳🇱",
         "disponibility": "Lata 350ml e Garrafa 330 ml",
-        "imageName": "Heineken"
+        "imageName": "Heineken Lager"
     },
     {
         "id": 1006,
@@ -172,7 +172,7 @@
     },
     {
         "id": 7001,
-        "name": "Imigração Hop Farmhouse Ale Garrafa",
+        "name": "Imigração Hop Farmhouse Ale",
         "type": "Bière de Garde (Pale Ale)",
         "ibu": 50,
         "color": "Amarelo Dourado",
@@ -259,7 +259,7 @@
         "food": "Chocolate, Comidas Apimentadas, Queijos Defumados, Salsicha,Trufa de Chocolate, Cervejas que tem boa presença do malte também costumam harmonizar muito bem com doce de leite! Isso mesmo, coloque a cerveja e o doce ao mesmo tempo na boca e você vai sentir um terceiro sabor: capuccino!",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Garrafa 310ml",
-        "imageName":"tupiniquin"
+        "imageName":"Tupiniquim Monjolo"
         
     },
     {
@@ -273,7 +273,7 @@
         "food": "salada de folhas, batata temperada com limão e pimenta, e sushis",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Garrafa 500ml",
-        "imageName": "cervejaKrug"
+        "imageName": "Krug Submissao"
     },
     {
         "id": 7009,
@@ -286,7 +286,7 @@
         "food": "Churrasco, feijoada, carne de porco com molhos de frutas, chucrute, carnes assadas, combinações doces e salgadas, salsichas, frango assado, peixes encorpados, molhos funghi, comida chinesa e queijos duros como grana padano, parmesão, pecorino e cheddar (tradicional). Combina também com charutos.",
         "origin": "Brasil 🇧🇷",
         "disponibility": "Garrafa 355ml",
-        "imageName":"Eisenbahn-Dunkel"
+        "imageName":"Eisenbahn Dunkel"
 
     }
 ]
