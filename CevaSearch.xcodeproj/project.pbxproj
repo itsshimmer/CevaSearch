@@ -42,6 +42,7 @@
 		FA0C0EFF26507D0B003FA30A /* FavsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C0EFE26507D0B003FA30A /* FavsView.swift */; };
 		FAF4B3472651298B00F65D21 /* FavouriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4B3462651298B00F65D21 /* FavouriteManager.swift */; };
 		FAF4B35026519F1D00F65D21 /* FavsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4B34F26519F1D00F65D21 /* FavsButton.swift */; };
+		FAFCD0F92656F1B200736009 /* BeersToShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCD0F82656F1B200736009 /* BeersToShow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		FA0C0EFE26507D0B003FA30A /* FavsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsView.swift; sourceTree = "<group>"; };
 		FAF4B3462651298B00F65D21 /* FavouriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteManager.swift; sourceTree = "<group>"; };
 		FAF4B34F26519F1D00F65D21 /* FavsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsButton.swift; sourceTree = "<group>"; };
+		FAFCD0F82656F1B200736009 /* BeersToShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersToShow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF4B3462651298B00F65D21 /* FavouriteManager.swift */,
+				FAFCD0F82656F1B200736009 /* BeersToShow.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				B4E7C6CC2643289B00905924 /* BeerModel.swift in Sources */,
 				B4AD2EF426431086009C263E /* MainViewModel.swift in Sources */,
 				B4BE27AF2656C8BD007841D4 /* SearchView.swift in Sources */,
+				FAFCD0F92656F1B200736009 /* BeersToShow.swift in Sources */,
 				9D31865C2649CE0100442D8F /* HeaderUserViewModel.swift in Sources */,
 				B4AD2EDC26430F73009C263E /* BeerView.swift in Sources */,
 				B4BE27B72656E829007841D4 /* BeerHeaderInfoSearchView.swift in Sources */,
