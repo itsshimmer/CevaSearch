@@ -43,7 +43,7 @@ struct TabBarView: View {
                                         
                                         Image(item.icon)
                                             //.frame(width: 12, height: 30)
-                                            .foregroundColor(self.selectedTab == item.tag ? Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)) : Color(UIColor.systemGray4))
+                                            .foregroundColor(self.selectedTab == item.tag ? Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)) : Color.init(#colorLiteral(red: 0.2341144085, green: 0.2368862331, blue: 0.262745098, alpha: 1)))
                                             .imageScale(.large)
                                             .padding(7)
                                             //.background(self.selectedTab == item.tag ? Color.init(#colorLiteral(red: 0.1569128633, green: 0.003460064763, blue: 0.2512872219, alpha: 1)) : item.color )
