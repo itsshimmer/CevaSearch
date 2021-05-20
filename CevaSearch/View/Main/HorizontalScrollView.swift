@@ -76,6 +76,7 @@ struct HorizontalScrollView: View {
                         }
                         .padding(.horizontal, 32)
                         .padding(.vertical, 32)
+                        Spacer()
                     }
                     .padding(32)
                 }
