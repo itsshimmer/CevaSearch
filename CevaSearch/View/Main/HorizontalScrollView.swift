@@ -54,9 +54,6 @@ struct HorizontalScrollView: View {
                                                     Spacer()
                                                     FavsButton(beer: beer, isFav: beer.isFavourite)
                                                         .padding()
-                                                        .onAppear() {
-                                                            
-                                                        }
                                                 }
                                                 Spacer()
                                             }

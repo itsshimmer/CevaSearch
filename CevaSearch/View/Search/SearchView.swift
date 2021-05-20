@@ -46,7 +46,7 @@ struct SearchView: View {
                         ForEach(getFilter(list: beers)) { beer in
                             HStack {
                                 NavigationLink(destination: BeerView(beer: beer)) {
-                                    BeerHeaderInfoFavView(beer: beer)
+                                    BeerHeaderInfoSearchView(beer: beer)
                                         .padding(.leading, 10)
                                 }
                                 .ignoresSafeArea()

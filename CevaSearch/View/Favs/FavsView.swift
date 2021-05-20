@@ -49,7 +49,6 @@ struct FavsView: View {
                                     .padding(.leading, 10)
                             }
                             .ignoresSafeArea()
-                            Spacer()
                         }
                     }
                 }
