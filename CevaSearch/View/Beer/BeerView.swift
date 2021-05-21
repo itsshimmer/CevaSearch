@@ -69,7 +69,7 @@ struct BeerView: View {
                     VStack(alignment:.leading){
                         
                         HStack {
-                            Text("Size:")
+                            Text("Tamanho:")
                                 .font(.system(size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
@@ -162,6 +162,7 @@ struct BeerView: View {
                             .font(.system(size: 20))
                             .fontWeight(.bold)
                             .foregroundColor(Color.init(#colorLiteral(red: 0.1586360335, green: 0.003368647536, blue: 0.2498541772, alpha: 1)))
+                            .padding(.bottom, 5)
                         Text(beer.food)
                             .font(.system(size: 15))
                             .padding(.bottom, 200.0)
